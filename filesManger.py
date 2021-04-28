@@ -15,7 +15,6 @@ def GetNameOfFile(node):
         result +=i
     result = result[::-1]
 
-
 def Getext(path):
     path = path[::-1]
     res = ''
@@ -42,6 +41,11 @@ def RemoveFile(target):
 def RemoveDir(target):
     os.popen('rmdir '+target)
 
+def AddCountOtNot(count):
+    if count == 0:return''
+    else :return '_'+str(count  )
+
+
 def TraverseDirs(node):
     judgelist = os.listdir(node)
 
@@ -55,13 +59,18 @@ def TraverseDirs(node):
                 curPath= DelDir(curPath)
                 continue
 
-            solutionFileName = os.listdir(curPath)[0]
-            ext = Getext(solutionFileName)
-            os.popen('touch '+DelDir(curPath)+'/'+problem+'.'+ext)
-            copy(curPath+'/'+solutionFileName , DelDir(curPath)+'/'+problem+'.'+ext)
-            RemoveFile(curPath+'/'+solutionFileName)
+            #many solution for one problem
+            numberOfSolution = 0
+            for solution in os.listdir(curPath):
+                solutionFileName = solution
+                ext = Getext(solutionFileName)
+                copy(curPath+'/'+solutionFileName , DelDir(curPath)+'/'+problem+AddCountOtNot(numberOfSolution)+'.'+ext)
+                RemoveFile(curPath+'/'+solutionFileName)
+                numberOfSolution+=1
+
             curPath = DelDir(curPath)
             os.popen('rmdir '+curPath+'/'+problem)
+
         curPath= DelDir(curPath)
 
 
@@ -71,4 +80,4 @@ def NamingAndReplace(root):
 
 
 if __name__ == '__main__':
-    NamingAndReplace(const.root+'/files')
+    NamingAndReplace(const.unzipDirTemp)

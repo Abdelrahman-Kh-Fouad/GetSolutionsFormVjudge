@@ -1,9 +1,10 @@
 import getpass
 import zipfile
 import io
-
 import os
-
+import network
+import filesManger
+import const
 def getDataFromUser():
     print("Enter your Data\nName: ", end='')
     name = input().strip()
@@ -11,11 +12,10 @@ def getDataFromUser():
     return {"username" : str(name),  "password" : str(pas)}
 
 LoginData = getDataFromUser()
-
-
+network.sessionAndFiles(LoginData)
 # mainRequest.get("https://vjudge.net/user/exportSource?m   inRunId=0&maxRunId=99999999&ac=true" , headers=vJudge_headers )
 # print(mainRequest)
-
+filesManger.NamingAndReplace(const.unzipDirTemp)
 
 
 

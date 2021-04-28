@@ -1,0 +1,913 @@
+Enter your Data
+Name: <Response [200]>
+<Response [200]>
+b'success'
+/home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles
+├── AtCoder
+│   ├── dp_a
+│   │   └── 29473245_AC_19ms_9840kB.cpp
+│   ├── dp_b
+│   │   └── 29473296_AC_64ms_11456kB.cpp
+│   ├── dp_c
+│   │   └── 29473344_AC_39ms_13768kB.cpp
+│   ├── dp_d
+│   │   └── 29473006_AC_192ms_82524kB.cpp
+│   ├── dp_h
+│   │   └── 29473131_AC_40ms_12464kB.cpp
+│   └── dp_i
+│       └── 29491834_AC_90ms_74356kB.cpp
+├── CodeChef
+│   ├── NAICHEF
+│   │   └── 30105979_AC_50ms_15667kB.cpp
+│   └── RNDPAIR
+│       └── 30106107_AC_0ms_15257kB.cpp
+├── CodeForces
+│   ├── 1380A
+│   │   └── 26358976_AC_187ms_3640kB.cpp
+│   ├── 1447A
+│   │   └── 28425455_AC_31ms_0kB.cpp
+│   ├── 1499A
+│   │   └── 30088638_AC_31ms_0kB.cpp
+│   ├── 1499B
+│   │   └── 30088680_AC_78ms_184kB.cpp
+│   ├── 233B
+│   │   └── 26125537_AC_62ms_4032kB.cpp
+│   ├── 252C
+│   │   └── 29674505_AC_124ms_792kB.cpp
+│   ├── 287B
+│   │   └── 30148401_AC_31ms_8kB.cpp
+│   ├── 300A
+│   │   └── 27372284_AC_62ms_8kB.cpp
+│   ├── 339D
+│   │   └── 29568938_AC_748ms_5144kB.cpp
+│   ├── 347C
+│   │   ├── 29666824_AC_62ms_8kB.cpp
+│   │   └── 29666827_AC_62ms_8kB.cpp
+│   ├── 371C
+│   │   └── 29674203_AC_30ms_8kB.cpp
+│   ├── 42A
+│   │   └── 26176625_AC_62ms_24kB.cpp
+│   ├── 439D
+│   │   └── 29663041_AC_155ms_792kB.cpp
+│   ├── 443D
+│   │   └── 30148728_AC_31ms_148kB.cpp
+│   ├── 454C
+│   │   └── 30148804_AC_46ms_16kB.cpp
+│   ├── 482B
+│   │   └── 29667621_AC_218ms_5432kB.cpp
+│   ├── 501B
+│   │   └── 29584160_AC_31ms_404kB.cpp
+│   ├── 505B
+│   │   └── 30132138_AC_31ms_256kB.cpp
+│   ├── 52C
+│   │   └── 29599039_AC_1029ms_12336kB.cpp
+│   ├── 558A
+│   │   └── 27371794_AC_31ms_0kB.cpp
+│   ├── 56D
+│   │   └── 29491649_AC_62ms_4052kB.cpp
+│   ├── 572B
+│   │   └── 30131955_AC_31ms_188kB.cpp
+│   ├── 580C
+│   │   └── 30134606_AC_343ms_8740kB.cpp
+│   ├── 602B
+│   │   └── 28789736_AC_140ms_8kB.cpp
+│   ├── 617B
+│   │   └── 30105629_AC_31ms_4kB.cpp
+│   ├── 637B
+│   │   └── 29583810_AC_670ms_13808kB.cpp
+│   ├── 651A
+│   │   └── 27372656_AC_31ms_240kB.cpp
+│   ├── 659A
+│   │   └── 27371988_AC_109ms_28kB.py
+│   ├── 681C
+│   │   └── 29584437_AC_124ms_12632kB.cpp
+│   ├── 702B
+│   │   └── 29599411_AC_124ms_8256kB.cpp
+│   ├── 75C
+│   │   └── 30148516_AC_154ms_32kB.cpp
+│   ├── 796D
+│   │   └── 30134536_AC_483ms_24560kB.cpp
+│   ├── 799B
+│   │   └── 29887882_AC_311ms_13028kB.cpp
+│   ├── 80B
+│   │   └── 26119090_AC_31ms_3888kB.cpp
+│   ├── 839C
+│   │   ├── 30106659_AC_140ms_10748kB.cpp
+│   │   └── 30148670_AC_77ms_10740kB.cpp
+│   ├── 90A
+│   │   └── 26119299_AC_62ms_3888kB.cpp
+│   ├── 91B
+│   │   └── 29746426_AC_156ms_1184kB.cpp
+│   └── 962D
+│       └── 29863527_AC_171ms_11976kB.cpp
+├── Gym
+│   ├── 102644A
+│   │   └── 30107759_AC_31ms_256kB.cpp
+│   ├── 102644B
+│   │   └── 30107907_AC_31ms_8kB.cpp
+│   ├── 102644C
+│   │   └── 30089309_AC_31ms_152kB.cpp
+│   └── 102644D
+│       └── 30108019_AC_546ms_684kB.cpp
+├── HackerRank
+│   ├── coin-change
+│   │   └── 30058642_AC_334ms_0kB.cpp
+│   └── sherlock-and-probability
+│       └── 30106465_AC_452ms_0kB.cpp
+├── Kattis
+│   ├── ada
+│   │   └── 30148843_AC_0ms_0kB.cpp
+│   ├── beepers
+│   │   └── 30148700_AC_6760ms_0kB.cpp
+│   ├── dicegame
+│   │   └── 30194851_AC_0ms_0kB.cpp
+│   ├── fontan
+│   │   └── 30147566_AC_0ms_0kB.cpp
+│   ├── goodmorning
+│   │   └── 30147908_AC_0ms_0kB.cpp
+│   ├── icpcteamselection
+│   │   └── 30059669_AC_0ms_0kB.cpp
+│   ├── increasingsubsequence
+│   │   └── 30058300_AC_0ms_0kB.cpp
+│   ├── jewelrybox
+│   │   └── 29663712_AC_20ms_0kB.cpp
+│   ├── knightsearch
+│   │   └── 30147975_AC_0ms_0kB.cpp
+│   ├── minimumscalar
+│   │   └── 30059966_AC_0ms_0kB.cpp
+│   ├── outofsorts
+│   │   └── 29661035_AC_400ms_0kB.cpp
+│   ├── password
+│   │   └── 30106161_AC_0ms_0kB.cpp
+│   ├── rationalarithmetic
+│   │   └── 30267396_AC_10ms_0kB.cpp
+│   ├── robotsonagrid
+│   │   └── 30105351_AC_150ms_0kB.cpp
+│   ├── shopaholic
+│   │   └── 30060021_AC_30ms_0kB.cpp
+│   ├── synchronizinglists
+│   │   └── 29661230_AC_20ms_0kB.cpp
+│   ├── tritiling
+│   │   └── 30148071_AC_0ms_0kB.cpp
+│   └── virus
+│       └── 30148658_AC_200ms_0kB.cpp
+├── SPOJ
+│   ├── ADFRUITS
+│   │   └── 30058587_AC_0ms_4710kB.cpp
+│   ├── CLFLARR
+│   │   └── 30628970_AC_2960ms_25600kB.cpp
+│   ├── CMPLS
+│   │   └── 30149228_AC_150ms_4915kB.cpp
+│   ├── ELEVTRBL
+│   │   └── 30031076_AC_80ms_5018kB.cpp
+│   ├── ELIS
+│   │   └── 30057396_AC_10ms_5018kB.cpp
+│   ├── IOIPALIN
+│   │   └── 30058375_AC_2260ms_101376kB.cpp
+│   ├── KOPC12A
+│   │   └── 29662526_AC_10ms_4915kB.cpp
+│   ├── LASTDIG
+│   │   └── 29690550_AC_0ms_4608kB.cpp
+│   ├── MARYBMW
+│   │   └── 30614314_AC_1680ms_5530kB.cpp
+│   ├── MC
+│   │   └── 30058595_AC_10ms_7373kB.cpp
+│   ├── PT07Y
+│   │   └── 29899204_AC_20ms_4915kB.cpp
+│   ├── PT07Z
+│   │   └── 29899427_AC_30ms_4915kB.cpp
+│   ├── SCUBADIV
+│   │   └── 30057240_AC_100ms_17408kB.cpp
+│   ├── WACHOVIA
+│   │   └── 30043025_AC_70ms_11264kB.cpp
+│   └── ZSUM
+│       └── 30105862_AC_40ms_4915kB.cpp
+├── TopCoder
+│   └── 5922
+│       └── 28245988_AC_43ms_11876kB.cpp
+└── UVA
+    ├── 10000
+    │   └── 30029005_AC_10ms_0kB.cpp
+    ├── 10004
+    │   └── 30136553_AC_0ms_0kB.cpp
+    ├── 10008
+    │   └── 30030733_AC_0ms_0kB.cpp
+    ├── 10013
+    │   └── 26189129_AC_700ms_0kB.cpp
+    ├── 10014
+    │   └── 26118875_AC_0ms_0kB.cpp
+    ├── 10017
+    │   └── 30267323_AC_10ms_0kB.cpp
+    ├── 10036
+    │   └── 29489839_AC_30ms_0kB.cpp
+    ├── 10041
+    │   └── 25834491_AC_50ms_0kB.cpp
+    ├── 10056
+    │   └── 30736773_AC_0ms_0kB.cpp
+    ├── 10057
+    │   └── 27974157_AC_400ms_0kB.cpp
+    ├── 10077
+    │   └── 30451194_AC_0ms_0kB.cpp
+    ├── 10079
+    │   └── 30104954_AC_0ms_0kB.cpp
+    ├── 10100
+    │   └── 28563012_AC_0ms_0kB.cpp
+    ├── 10106
+    │   ├── 22206564_AC_10ms_0kB.c
+    │   └── 24919906_AC_0ms_0kB.c
+    ├── 10110
+    │   └── 22205495_AC_60ms_0kB.cpp
+    ├── 10116
+    │   └── 30135883_AC_0ms_0kB.cpp
+    ├── 10170
+    │   ├── 27705414_AC_550ms_0kB.cpp
+    │   └── 27705455_AC_10ms_0kB.cpp
+    ├── 10176
+    │   └── 28679135_AC_10ms_0kB.cpp
+    ├── 10192
+    │   └── 29057357_AC_0ms_0kB.cpp
+    ├── 102
+    │   └── 25835751_AC_40ms_0kB.cpp
+    ├── 10200
+    │   └── 26530191_AC_90ms_0kB.cpp
+    ├── 10223
+    │   └── 26308031_AC_10ms_0kB.c
+    ├── 10235
+    │   └── 29667144_AC_0ms_0kB.cpp
+    ├── 10303
+    │   └── 26307961_AC_20ms_0kB.c
+    ├── 10325
+    │   └── 28865895_AC_100ms_0kB.cpp
+    ├── 10338
+    │   └── 29673918_AC_20ms_0kB.cpp
+    ├── 10341
+    │   └── 30148377_AC_0ms_0kB.cpp
+    ├── 10360
+    │   └── 27176810_AC_90ms_0kB.cpp
+    ├── 10365
+    │   └── 25836158_AC_0ms_0kB.cpp
+    ├── 10368
+    │   └── 23340008_AC_400ms_0kB.cpp
+    ├── 10405
+    │   └── 28542839_AC_0ms_0kB.cpp
+    ├── 10452
+    │   └── 25353929_AC_0ms_0kB.cpp
+    ├── 10487
+    │   └── 25835855_AC_60ms_0kB.cpp
+    ├── 10489
+    │   └── 28651563_AC_40ms_0kB.cpp
+    ├── 10518
+    │   └── 30089798_AC_0ms_0kB.cpp
+    ├── 10519
+    │   └── 26134935_AC_10ms_0kB.c
+    ├── 10533
+    │   └── 26529196_AC_760ms_0kB.cpp
+    ├── 10534
+    │   ├── 28220099_AC_80ms_0kB.cpp
+    │   ├── 28220105_AC_90ms_0kB.cpp
+    │   └── 29552377_AC_40ms_0kB.cpp
+    ├── 10566
+    │   └── 27667533_AC_0ms_0kB.cpp
+    ├── 10573
+    │   └── 30163758_AC_0ms_0kB.cpp
+    ├── 10579
+    │   └── 26243130_AC_10ms_0kB.c
+    ├── 10591
+    │   └── 26188848_AC_0ms_0kB.cpp
+    ├── 10611
+    │   └── 27649790_AC_30ms_0kB.cpp
+    ├── 10617
+    │   └── 29084480_AC_0ms_0kB.cpp
+    ├── 10622
+    │   └── 29348774_AC_0ms_0kB.cpp
+    ├── 10626
+    │   └── 28507539_AC_50ms_0kB.cpp
+    ├── 10696
+    │   └── 26110555_AC_310ms_0kB.cpp
+    ├── 10739
+    │   └── 28563498_AC_10ms_0kB.cpp
+    ├── 10777
+    │   └── 30149408_AC_0ms_0kB.cpp
+    ├── 10862
+    │   └── 26243750_AC_10ms_0kB.c
+    ├── 10892
+    │   └── 30268018_AC_70ms_0kB.cpp
+    ├── 10924
+    │   └── 29673356_AC_0ms_0kB.cpp
+    ├── 10931
+    │   └── 26147105_AC_0ms_0kB.cpp
+    ├── 10948
+    │   └── 26526768_AC_0ms_0kB.cpp
+    ├── 10970
+    │   └── 26118291_AC_80ms_0kB.cpp
+    ├── 11000
+    │   └── 26243565_AC_0ms_0kB.cpp
+    ├── 11039
+    │   └── 27997716_AC_80ms_0kB.cpp
+    ├── 11054
+    │   └── 28003178_AC_40ms_0kB.cpp
+    ├── 11089
+    │   └── 26261983_AC_0ms_0kB.cpp
+    ├── 11094
+    │   └── 23946628_AC_0ms_0kB.cpp
+    ├── 11151
+    │   └── 28563560_AC_10ms_0kB.cpp
+    ├── 11161
+    │   └── 26260033_AC_0ms_0kB.c
+    ├── 11172
+    │   └── 26134120_AC_0ms_0kB.cpp
+    ├── 11185
+    │   └── 26147478_AC_0ms_0kB.cpp
+    ├── 1121
+    │   └── 30162585_AC_10ms_0kB.cpp
+    ├── 11231
+    │   └── 30090549_AC_0ms_0kB.cpp
+    ├── 11233
+    │   └── 30030226_AC_0ms_0kB.cpp
+    ├── 11240
+    │   └── 27975277_AC_80ms_0kB.cpp
+    ├── 11292
+    │   └── 28020476_AC_10ms_0kB.cpp
+    ├── 11350
+    │   └── 30435968_AC_10ms_0kB.cpp
+    ├── 11388
+    │   └── 29673708_AC_0ms_0kB.cpp
+    ├── 11389
+    │   └── 28003708_AC_0ms_0kB.cpp
+    ├── 11536
+    │   └── 30163662_AC_1220ms_0kB.cpp
+    ├── 11561
+    │   ├── 26069198_AC_0ms_0kB.cpp
+    │   ├── 26069299_AC_0ms_0kB.cpp
+    │   └── 26069306_AC_0ms_0kB.cpp
+    ├── 11616
+    │   └── 30474898_AC_0ms_0kB.cpp
+    ├── 11621
+    │   └── 25844454_AC_130ms_0kB.cpp
+    ├── 11686
+    │   ├── 26062083_AC_780ms_0kB.cpp
+    │   └── 30601321_AC_340ms_0kB.cpp
+    ├── 11703
+    │   └── 28603664_AC_110ms_0kB.cpp
+    ├── 11824
+    │   └── 27975527_AC_0ms_0kB.cpp
+    ├── 11827
+    │   └── 29674234_AC_0ms_0kB.cpp
+    ├── 11838
+    │   └── 26877802_AC_50ms_0kB.cpp
+    ├── 11933
+    │   └── 22808468_AC_0ms_0kB.cpp
+    ├── 11966
+    │   └── 26078717_AC_30ms_0kB.cpp
+    ├── 11988
+    │   └── 22860192_AC_210ms_0kB.cpp
+    ├── 11995
+    │   └── 29583770_AC_10ms_0kB.cpp
+    ├── 12032
+    │   └── 29662255_AC_40ms_0kB.cpp
+    ├── 12068
+    │   └── 29673729_AC_0ms_0kB.cpp
+    ├── 1207
+    │   └── 28575424_AC_0ms_0kB.cpp
+    ├── 12086
+    │   └── 29555218_AC_320ms_0kB.cpp
+    ├── 1230
+    │   └── 28605321_AC_0ms_0kB.cpp
+    ├── 12470
+    │   └── 30090351_AC_0ms_0kB.cpp
+    ├── 1250
+    │   └── 28479956_AC_190ms_0kB.cpp
+    ├── 12532
+    │   └── 29599058_AC_90ms_0kB.cpp
+    ├── 128
+    │   └── 28652006_AC_170ms_0kB.cpp
+    ├── 1605
+    │   └── 28073765_AC_0ms_0kB.cpp
+    ├── 167
+    │   └── 25944711_AC_0ms_0kB.cpp
+    ├── 264
+    │   └── 26109964_AC_0ms_0kB.cpp
+    ├── 280
+    │   └── 30135314_AC_90ms_0kB.cpp
+    ├── 348
+    │   ├── 29097239_AC_60ms_0kB.cpp
+    │   └── 30058742_AC_40ms_0kB.cpp
+    ├── 353
+    │   └── 30031045_AC_0ms_0kB.cpp
+    ├── 369
+    │   └── 29667096_AC_0ms_0kB.cpp
+    ├── 374
+    │   ├── 28652312_AC_0ms_0kB.cpp
+    │   └── 29690501_AC_0ms_0kB.cpp
+    ├── 378
+    │   ├── 24069721_AC_0ms_0kB.cpp
+    │   └── 30475643_AC_0ms_0kB.cpp
+    ├── 389
+    │   └── 26154618_AC_130ms_0kB.cpp
+    ├── 397
+    │   └── 30030648_AC_0ms_0kB.cpp
+    ├── 412
+    │   └── 23369432_AC_260ms_0kB.cpp
+    ├── 439
+    │   └── 23485247_AC_90ms_0kB.cpp
+    ├── 459
+    │   └── 30602252_AC_0ms_0kB.cpp
+    ├── 487
+    │   └── 25983921_AC_120ms_0kB.cpp
+    ├── 496
+    │   └── 26176575_AC_0ms_0kB.cpp
+    ├── 524
+    │   ├── 25944530_AC_240ms_0kB.cpp
+    │   └── 27046099_AC_190ms_0kB.cpp
+    ├── 526
+    │   └── 28562506_AC_30ms_0kB.cpp
+    ├── 530
+    │   └── 29667040_AC_0ms_0kB.cpp
+    ├── 541
+    │   └── 22808517_AC_0ms_0kB.cpp
+    ├── 543
+    │   └── 26526586_AC_2510ms_0kB.cpp
+    ├── 544
+    │   └── 28910540_AC_0ms_0kB.cpp
+    ├── 562
+    │   └── 29057483_AC_140ms_0kB.cpp
+    ├── 571
+    │   └── 30629852_AC_10ms_0kB.cpp
+    ├── 572
+    │   └── 29951686_AC_0ms_0kB.cpp
+    ├── 575
+    │   └── 26146658_AC_0ms_0kB.cpp
+    ├── 583
+    │   └── 29327914_AC_460ms_0kB.cpp
+    ├── 624
+    │   └── 27176605_AC_10ms_0kB.cpp
+    ├── 673
+    │   └── 28026771_AC_60ms_0kB.cpp
+    ├── 913
+    │   └── 26120185_AC_0ms_0kB.cpp
+    └── 967
+        └── 26578857_AC_350ms_0kB.cpp
+
+220 directories, 224 files
+
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeChef/RNDPAIR/30106107_AC_0ms_15257kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeChef/RNDPAIR.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeChef/NAICHEF/30105979_AC_50ms_15667kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeChef/NAICHEF.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/91B/29746426_AC_156ms_1184kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/91B.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/443D/30148728_AC_31ms_148kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/443D.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/75C/30148516_AC_154ms_32kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/75C.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/505B/30132138_AC_31ms_256kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/505B.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/572B/30131955_AC_31ms_188kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/572B.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/796D/30134536_AC_483ms_24560kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/796D.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/962D/29863527_AC_171ms_11976kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/962D.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/1499B/30088680_AC_78ms_184kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/1499B.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/252C/29674505_AC_124ms_792kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/252C.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/1447A/28425455_AC_31ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/1447A.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/637B/29583810_AC_670ms_13808kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/637B.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/702B/29599411_AC_124ms_8256kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/702B.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/799B/29887882_AC_311ms_13028kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/799B.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/651A/27372656_AC_31ms_240kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/651A.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/90A/26119299_AC_62ms_3888kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/90A.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/1499A/30088638_AC_31ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/1499A.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/454C/30148804_AC_46ms_16kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/454C.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/287B/30148401_AC_31ms_8kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/287B.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/681C/29584437_AC_124ms_12632kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/681C.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/371C/29674203_AC_30ms_8kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/371C.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/617B/30105629_AC_31ms_4kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/617B.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/558A/27371794_AC_31ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/558A.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/80B/26119090_AC_31ms_3888kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/80B.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/602B/28789736_AC_140ms_8kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/602B.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/482B/29667621_AC_218ms_5432kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/482B.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/300A/27372284_AC_62ms_8kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/300A.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/659A/27371988_AC_109ms_28kB.py /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/659A.py
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/347C/29666827_AC_62ms_8kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/347C.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/347C/29666824_AC_62ms_8kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/347C_1.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/439D/29663041_AC_155ms_792kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/439D.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/233B/26125537_AC_62ms_4032kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/233B.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/501B/29584160_AC_31ms_404kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/501B.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/339D/29568938_AC_748ms_5144kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/339D.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/52C/29599039_AC_1029ms_12336kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/52C.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/839C/30148670_AC_77ms_10740kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/839C.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/839C/30106659_AC_140ms_10748kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/839C_1.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/42A/26176625_AC_62ms_24kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/42A.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/56D/29491649_AC_62ms_4052kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/56D.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/1380A/26358976_AC_187ms_3640kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/1380A.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/580C/30134606_AC_343ms_8740kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/CodeForces/580C.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/synchronizinglists/29661230_AC_20ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/synchronizinglists.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/increasingsubsequence/30058300_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/increasingsubsequence.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/outofsorts/29661035_AC_400ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/outofsorts.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/virus/30148658_AC_200ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/virus.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/goodmorning/30147908_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/goodmorning.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/shopaholic/30060021_AC_30ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/shopaholic.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/knightsearch/30147975_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/knightsearch.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/tritiling/30148071_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/tritiling.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/robotsonagrid/30105351_AC_150ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/robotsonagrid.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/icpcteamselection/30059669_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/icpcteamselection.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/ada/30148843_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/ada.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/rationalarithmetic/30267396_AC_10ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/rationalarithmetic.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/password/30106161_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/password.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/beepers/30148700_AC_6760ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/beepers.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/fontan/30147566_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/fontan.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/minimumscalar/30059966_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/minimumscalar.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/dicegame/30194851_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/dicegame.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/jewelrybox/29663712_AC_20ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Kattis/jewelrybox.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/AtCoder/dp_i/29491834_AC_90ms_74356kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/AtCoder/dp_i.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/AtCoder/dp_a/29473245_AC_19ms_9840kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/AtCoder/dp_a.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/AtCoder/dp_d/29473006_AC_192ms_82524kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/AtCoder/dp_d.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/AtCoder/dp_b/29473296_AC_64ms_11456kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/AtCoder/dp_b.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/AtCoder/dp_c/29473344_AC_39ms_13768kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/AtCoder/dp_c.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/AtCoder/dp_h/29473131_AC_40ms_12464kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/AtCoder/dp_h.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Gym/102644D/30108019_AC_546ms_684kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Gym/102644D.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Gym/102644A/30107759_AC_31ms_256kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Gym/102644A.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Gym/102644B/30107907_AC_31ms_8kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Gym/102644B.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Gym/102644C/30089309_AC_31ms_152kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/Gym/102644C.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/439/23485247_AC_90ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/439.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10566/27667533_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10566.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11039/27997716_AC_80ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11039.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11089/26261983_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11089.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10110/22205495_AC_60ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10110.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/12532/29599058_AC_90ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/12532.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10303/26307961_AC_20ms_0kB.c /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10303.c
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/128/28652006_AC_170ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/128.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11988/22860192_AC_210ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11988.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11000/26243565_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11000.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/348/29097239_AC_60ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/348.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/348/30058742_AC_40ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/348_1.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/374/28652312_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/374.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/374/29690501_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/374_1.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11389/28003708_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11389.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10626/28507539_AC_50ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10626.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10622/29348774_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10622.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/673/28026771_AC_60ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/673.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11151/28563560_AC_10ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11151.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/562/29057483_AC_140ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/562.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10573/30163758_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10573.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/412/23369432_AC_260ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/412.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11185/26147478_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11185.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10519/26134935_AC_10ms_0kB.c /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10519.c
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10013/26189129_AC_700ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10013.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11561/26069198_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11561.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11561/26069299_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11561_1.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11561/26069306_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11561_2.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10341/30148377_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10341.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10862/26243750_AC_10ms_0kB.c /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10862.c
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/102/25835751_AC_40ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/102.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11616/30474898_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11616.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10176/28679135_AC_10ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10176.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10360/27176810_AC_90ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10360.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10617/29084480_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10617.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10405/28542839_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10405.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11824/27975527_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11824.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10368/23340008_AC_400ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10368.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/571/30629852_AC_10ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/571.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/397/30030648_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/397.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/624/27176605_AC_10ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/624.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/541/22808517_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/541.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10338/29673918_AC_20ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10338.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10452/25353929_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10452.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/369/29667096_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/369.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10487/25835855_AC_60ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10487.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10739/28563498_AC_10ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10739.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10017/30267323_AC_10ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10017.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10970/26118291_AC_80ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10970.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/280/30135314_AC_90ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/280.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10591/26188848_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10591.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11231/30090549_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11231.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11240/27975277_AC_80ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11240.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/167/25944711_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/167.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10518/30089798_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10518.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10696/26110555_AC_310ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10696.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10534/29552377_AC_40ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10534.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10534/28220105_AC_90ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10534_1.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10534/28220099_AC_80ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10534_2.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11094/23946628_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11094.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10611/27649790_AC_30ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10611.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/583/29327914_AC_460ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/583.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11838/26877802_AC_50ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11838.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10223/26308031_AC_10ms_0kB.c /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10223.c
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/12470/30090351_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/12470.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10056/30736773_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10056.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/487/25983921_AC_120ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/487.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10200/26530191_AC_90ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10200.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10777/30149408_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10777.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/967/26578857_AC_350ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/967.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10533/26529196_AC_760ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10533.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11686/30601321_AC_340ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11686.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11686/26062083_AC_780ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11686_1.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/913/26120185_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/913.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/1605/28073765_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/1605.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/378/30475643_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/378.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/378/24069721_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/378_1.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/575/26146658_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/575.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10235/29667144_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10235.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10948/26526768_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10948.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10014/26118875_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10014.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11995/29583770_AC_10ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11995.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10079/30104954_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10079.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11827/29674234_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11827.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11388/29673708_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11388.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10036/29489839_AC_30ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10036.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10057/27974157_AC_400ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10057.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10100/28563012_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10100.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11233/30030226_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11233.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11054/28003178_AC_40ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11054.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10077/30451194_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10077.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10192/29057357_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10192.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/572/29951686_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/572.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10325/28865895_AC_100ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10325.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10579/26243130_AC_10ms_0kB.c /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10579.c
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10106/22206564_AC_10ms_0kB.c /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10106.c
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10106/24919906_AC_0ms_0kB.c /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10106_1.c
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10008/30030733_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10008.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10170/27705414_AC_550ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10170.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10170/27705455_AC_10ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10170_1.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/353/30031045_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/353.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11161/26260033_AC_0ms_0kB.c /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11161.c
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/524/27046099_AC_190ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/524.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/524/25944530_AC_240ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/524_1.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10924/29673356_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10924.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/12068/29673729_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/12068.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10892/30268018_AC_70ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10892.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/389/26154618_AC_130ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/389.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/496/26176575_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/496.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11536/30163662_AC_1220ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11536.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/12032/29662255_AC_40ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/12032.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/12086/29555218_AC_320ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/12086.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/264/26109964_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/264.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11292/28020476_AC_10ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11292.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10041/25834491_AC_50ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10041.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10116/30135883_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10116.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/543/26526586_AC_2510ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/543.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10931/26147105_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10931.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/1207/28575424_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/1207.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/459/30602252_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/459.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/530/29667040_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/530.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/544/28910540_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/544.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10000/30029005_AC_10ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10000.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10365/25836158_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10365.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11350/30435968_AC_10ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11350.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/1121/30162585_AC_10ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/1121.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10489/28651563_AC_40ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10489.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11172/26134120_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11172.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11966/26078717_AC_30ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11966.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11621/25844454_AC_130ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11621.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11933/22808468_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11933.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10004/30136553_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/10004.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/526/28562506_AC_30ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/526.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/1250/28479956_AC_190ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/1250.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11703/28603664_AC_110ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/11703.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/1230/28605321_AC_0ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/UVA/1230.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/TopCoder/5922/28245988_AC_43ms_11876kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/TopCoder/5922.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/IOIPALIN/30058375_AC_2260ms_101376kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/IOIPALIN.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/ZSUM/30105862_AC_40ms_4915kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/ZSUM.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/SCUBADIV/30057240_AC_100ms_17408kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/SCUBADIV.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/ADFRUITS/30058587_AC_0ms_4710kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/ADFRUITS.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/LASTDIG/29690550_AC_0ms_4608kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/LASTDIG.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/WACHOVIA/30043025_AC_70ms_11264kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/WACHOVIA.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/CMPLS/30149228_AC_150ms_4915kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/CMPLS.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/CLFLARR/30628970_AC_2960ms_25600kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/CLFLARR.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/PT07Z/29899427_AC_30ms_4915kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/PT07Z.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/MARYBMW/30614314_AC_1680ms_5530kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/MARYBMW.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/ELEVTRBL/30031076_AC_80ms_5018kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/ELEVTRBL.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/PT07Y/29899204_AC_20ms_4915kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/PT07Y.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/MC/30058595_AC_10ms_7373kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/MC.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/ELIS/30057396_AC_10ms_5018kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/ELIS.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/KOPC12A/29662526_AC_10ms_4915kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/SPOJ/KOPC12A.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/HackerRank/sherlock-and-probability/30106465_AC_452ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/HackerRank/sherlock-and-probability.cpp
+cp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/HackerRank/coin-change/30058642_AC_334ms_0kB.cpp /home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles/HackerRank/coin-change.cpp
+/home/abdelrahmankhaled/PycharmProjects/GetSolution/tmpfiles
+├── AtCoder
+│   ├── dp_a.cpp
+│   ├── dp_b.cpp
+│   ├── dp_c.cpp
+│   ├── dp_d.cpp
+│   ├── dp_h.cpp
+│   └── dp_i.cpp
+├── CodeChef
+│   ├── NAICHEF.cpp
+│   └── RNDPAIR.cpp
+├── CodeForces
+│   ├── 1380A.cpp
+│   ├── 1447A.cpp
+│   ├── 1499A.cpp
+│   ├── 1499B.cpp
+│   ├── 233B.cpp
+│   ├── 252C.cpp
+│   ├── 287B.cpp
+│   ├── 300A.cpp
+│   ├── 339D.cpp
+│   ├── 347C_1.cpp
+│   ├── 347C.cpp
+│   ├── 371C.cpp
+│   ├── 42A.cpp
+│   ├── 439D.cpp
+│   ├── 443D.cpp
+│   ├── 454C.cpp
+│   ├── 482B.cpp
+│   ├── 501B.cpp
+│   ├── 505B.cpp
+│   ├── 52C.cpp
+│   ├── 558A.cpp
+│   ├── 56D.cpp
+│   ├── 572B.cpp
+│   ├── 580C.cpp
+│   ├── 602B.cpp
+│   ├── 617B.cpp
+│   ├── 637B.cpp
+│   ├── 651A.cpp
+│   ├── 659A.py
+│   ├── 681C.cpp
+│   ├── 702B.cpp
+│   ├── 75C.cpp
+│   ├── 796D.cpp
+│   ├── 799B.cpp
+│   ├── 80B.cpp
+│   ├── 839C_1.cpp
+│   ├── 839C.cpp
+│   ├── 90A.cpp
+│   ├── 91B.cpp
+│   └── 962D.cpp
+├── Gym
+│   ├── 102644A.cpp
+│   ├── 102644B.cpp
+│   ├── 102644C.cpp
+│   └── 102644D.cpp
+├── HackerRank
+│   ├── coin-change.cpp
+│   └── sherlock-and-probability.cpp
+├── Kattis
+│   ├── ada.cpp
+│   ├── beepers.cpp
+│   ├── dicegame.cpp
+│   ├── fontan.cpp
+│   ├── goodmorning.cpp
+│   ├── icpcteamselection.cpp
+│   ├── increasingsubsequence.cpp
+│   ├── jewelrybox.cpp
+│   ├── knightsearch.cpp
+│   ├── minimumscalar.cpp
+│   ├── outofsorts.cpp
+│   ├── password.cpp
+│   ├── rationalarithmetic.cpp
+│   ├── robotsonagrid.cpp
+│   ├── shopaholic.cpp
+│   ├── synchronizinglists.cpp
+│   ├── tritiling.cpp
+│   └── virus.cpp
+├── SPOJ
+│   ├── ADFRUITS.cpp
+│   ├── CLFLARR.cpp
+│   ├── CMPLS.cpp
+│   ├── ELEVTRBL.cpp
+│   ├── ELIS.cpp
+│   ├── IOIPALIN.cpp
+│   ├── KOPC12A.cpp
+│   ├── LASTDIG.cpp
+│   ├── MARYBMW.cpp
+│   ├── MC.cpp
+│   ├── PT07Y.cpp
+│   ├── PT07Z.cpp
+│   ├── SCUBADIV.cpp
+│   ├── WACHOVIA.cpp
+│   └── ZSUM.cpp
+├── TopCoder
+│   └── 5922.cpp
+└── UVA
+    ├── 10000.cpp
+    ├── 10004.cpp
+    ├── 10008.cpp
+    ├── 10013.cpp
+    ├── 10014.cpp
+    ├── 10017.cpp
+    ├── 10036.cpp
+    ├── 10041.cpp
+    ├── 10056.cpp
+    ├── 10057.cpp
+    ├── 10077.cpp
+    ├── 10079.cpp
+    ├── 10100.cpp
+    ├── 10106_1.c
+    ├── 10106.c
+    ├── 10110.cpp
+    ├── 10116.cpp
+    ├── 10170_1.cpp
+    ├── 10170.cpp
+    ├── 10176.cpp
+    ├── 10192.cpp
+    ├── 10200.cpp
+    ├── 10223.c
+    ├── 10235.cpp
+    ├── 102.cpp
+    ├── 10303.c
+    ├── 10325.cpp
+    ├── 10338.cpp
+    ├── 10341.cpp
+    ├── 10360.cpp
+    ├── 10365.cpp
+    ├── 10368.cpp
+    ├── 10405.cpp
+    ├── 10452.cpp
+    ├── 10487.cpp
+    ├── 10489.cpp
+    ├── 10518.cpp
+    ├── 10519.c
+    ├── 10533.cpp
+    ├── 10534_1.cpp
+    ├── 10534_2.cpp
+    ├── 10534.cpp
+    ├── 10566.cpp
+    ├── 10573.cpp
+    ├── 10579.c
+    ├── 10591.cpp
+    ├── 10611.cpp
+    ├── 10617.cpp
+    ├── 10622.cpp
+    ├── 10626.cpp
+    ├── 10696.cpp
+    ├── 10739.cpp
+    ├── 10777.cpp
+    ├── 10862.c
+    ├── 10892.cpp
+    ├── 10924.cpp
+    ├── 10931.cpp
+    ├── 10948.cpp
+    ├── 10970.cpp
+    ├── 11000.cpp
+    ├── 11039.cpp
+    ├── 11054.cpp
+    ├── 11089.cpp
+    ├── 11094.cpp
+    ├── 11151.cpp
+    ├── 11161.c
+    ├── 11172.cpp
+    ├── 11185.cpp
+    ├── 1121.cpp
+    ├── 11231.cpp
+    ├── 11233.cpp
+    ├── 11240.cpp
+    ├── 11292.cpp
+    ├── 11350.cpp
+    ├── 11388.cpp
+    ├── 11389.cpp
+    ├── 11536.cpp
+    ├── 11561_1.cpp
+    ├── 11561_2.cpp
+    ├── 11561.cpp
+    ├── 11616.cpp
+    ├── 11621.cpp
+    ├── 11686_1.cpp
+    ├── 11686.cpp
+    ├── 11703.cpp
+    ├── 11824.cpp
+    ├── 11827.cpp
+    ├── 11838.cpp
+    ├── 11933.cpp
+    ├── 11966.cpp
+    ├── 11988.cpp
+    ├── 11995.cpp
+    ├── 12032.cpp
+    ├── 12068.cpp
+    ├── 1207.cpp
+    ├── 12086.cpp
+    ├── 1230.cpp
+    ├── 12470.cpp
+    ├── 1250.cpp
+    ├── 12532.cpp
+    ├── 128.cpp
+    ├── 1605.cpp
+    ├── 167.cpp
+    ├── 264.cpp
+    ├── 280.cpp
+    ├── 348_1.cpp
+    ├── 348.cpp
+    ├── 353.cpp
+    ├── 369.cpp
+    ├── 374_1.cpp
+    ├── 374.cpp
+    ├── 378_1.cpp
+    ├── 378.cpp
+    ├── 389.cpp
+    ├── 397.cpp
+    ├── 412.cpp
+    ├── 439.cpp
+    ├── 459.cpp
+    ├── 487.cpp
+    ├── 496.cpp
+    ├── 524_1.cpp
+    ├── 524.cpp
+    ├── 526.cpp
+    ├── 530.cpp
+    ├── 541.cpp
+    ├── 543.cpp
+    ├── 544.cpp
+    ├── 562.cpp
+    ├── 571.cpp
+    ├── 572.cpp
+    ├── 575.cpp
+    ├── 583.cpp
+    ├── 624.cpp
+    ├── 673.cpp
+    ├── 913.cpp
+    └── 967.cpp
+
+9 directories, 224 files
+
