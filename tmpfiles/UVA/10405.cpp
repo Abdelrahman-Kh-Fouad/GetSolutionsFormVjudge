@@ -12,15 +12,15 @@ int dp(int i =0 , int j =0 )
     if(a[i]==b[j])
         return dp(i+1 ,j+1)+1 ; 
     
-    return  stat = max ( dp(i+1 , j ) , dp(i ,j+1 ) );
+    return  stat = max (dp(i+1 , j ) , dp(i ,j+1 ));
 }
 int main ()
 {
-    while (getline(cin, a ))
+    while (cin>>a>>b)
     {
-        getline(cin, b );
         memset(memo, -1 , sizeof memo);    
         cout<<dp()<<endl;
+
     }
     
 }

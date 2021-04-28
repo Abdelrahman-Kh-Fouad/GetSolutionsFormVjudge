@@ -1,37 +1,40 @@
-#include <stdio.h>
-#include <string.h>
-int n, m, cnt;
-int dir[4][2] = {{0,1},{1,0},{0,-1},{-1,0}};
-char used[55][55] = {}, g[55][55];
-void dfs(int x, int y) {
-    if(g[x][y] == '#' || used[x][y])
-        return;
-    if(g[x][y] == 'G')
-        cnt++;
-    used[x][y] = 1;
-    int i;
-    for(i = 0; i < 4; i++)
-        if(g[x+dir[i][0]][y+dir[i][1]] == 'T')
-            return;
-    for(i = 0; i < 4; i++)
-        dfs(x+dir[i][0], y+dir[i][1]);
+#include <bits/stdc++.h>
+using namespace std;
+typedef pair<int,int> p;
+#define f first
+#define s second
+int n,m;
+int xx[]={0,0,1,-1};
+int yy[]={1,-1,0,0};
+int go (vector<vector<char>>&grid , p node)
+{
+    if(grid[node.f][node.s] == '.' ||grid[node.f][node.s]=='G')
+    {
+        int sum =(grid[node.f][node.s]=='G')?1:0;
+        grid[node.f][node.s]='*';
+        for(int i =0 ; i< 4 ;i++)
+            if(grid[node.f+xx[i]][node.s+yy[i]]=='T')
+                return sum;
+        for(int i =0 ;i < 4 ;i++)
+            sum+=go(grid , {node.f+xx[i],node.s+yy[i]});
+        return sum;
+    }
 }
 int main() {
-    int i, j;
-    while(scanf("%d %d", &n, &m) == 2) {
-        for(i = 0; i < m; i++)
-            scanf("%s", &g[i]);
-        memset(used, 0, sizeof(used));
-        cnt = 0;
-        j = n;
-        for(i = 0; i < m && j == n; i++) {
-            for(j = 0; j < n; j++)
-                if(used[i][j] == 0 && g[i][j] == 'P') {
-                    dfs(i, j);
-                    break;
-                }
-        }
-        printf("%d\n", cnt);
+    int cnt =1;
+    while(cin>>m>>n)
+    {
+        vector<vector<char>>grid(n, vector<char>(m));
+        p p;
+        for(int i = 0 ;i <n; i++)
+            for(int j =0 ;j <m ;j++)
+            {
+                cin>>grid[i][j];
+                if(grid[i][j]=='P')
+                    p={i,j};
+            }
+        grid[p.f][p.s]='.';
+        cout<<go(grid , p )<<endl;
     }
     return 0;
 }

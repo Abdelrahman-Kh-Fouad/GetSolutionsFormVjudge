@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std ;
 string a , b ;
-vector<vector<int>> memo;
+int memo[1001][1001];
 int dp(int i =0  , int j = 0 )
 {
     if(i==a.length() && j==b.length())
@@ -22,15 +22,13 @@ int main()
     int n ,m ;
     while(cin>>n)
     {
-        a="" ;b="";
         char tmp ; 
         for(int i =0 ;i < n ;i ++ )
             cin>>tmp , a.push_back(tmp);
         cin>>m;
         for(int i =0 ;i < m ;i ++ )
             cin>>tmp , b.push_back(tmp);
-        memo.clear();
-        memo.assign(n+1 , vector<int>(m+1 , -1));
+        memset(memo  , -1 , sizeof memo);
         cout<<dp()<<endl;
     }    
 }

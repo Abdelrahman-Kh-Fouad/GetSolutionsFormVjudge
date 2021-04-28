@@ -5,25 +5,23 @@ int main ()
 {
     int m = 131071-1;
     int size = floor(log2(m))+1;
-    string s ;
-    string tmp;  
-    while(cin>>tmp)
-    {          
-        s+=tmp;
-        if(s.back()!='#')
-            continue;
-        else
-            s.pop_back();
+    string s ; 
+    while(cin>>s)
+    {
+        s.pop_back();
         reverse(s.begin() , s.end());
-        int num = 0 ;
-        for(int i =0 ;i < s.length() ;i++ )
+        bool res =0;
+        for(int i =0  ;i< s.length() ; i++)
         {
-            num +=(s[i]-'0');
-            num *=2;
-            num %=131071;
+            if(i>=size)
+                break;
+            bool cur =(bool) s[i]-'0';
+            res |= getbit(m , i ) & cur ;
         }
-        cout<<((num)? "NO" : "YES")<<endl;
-        s="";
+        if(!res)
+            cout<<"YES"<<endl;
+        else
+            cout<<"NO"<<endl;
     }
 
 }

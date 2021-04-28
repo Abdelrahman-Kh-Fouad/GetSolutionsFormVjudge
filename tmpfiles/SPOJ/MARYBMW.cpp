@@ -58,11 +58,7 @@ void solve()
             ds.merge(cur.u , cur.v);
         }
     }
-
-    if(ds.is_same(0 , n-1 ) )
-        cout << res <<endl;
-    else 
-        cout <<-1<<endl;
+    cout <<(ds.is_same(0 , n-1)? res : -1 ) <<endl;
 
 }
 int main()

@@ -12,7 +12,7 @@ long long dp (vector<pair<int,int>>&arr ,int i =0  ,  int j = n-1  )
     if(stat !=-1)
         return stat ; 
     stat = LONG_LONG_MAX;
-    for(int k =  i ; k <=j ;k++)
+    for(int k =  i ; k <j ;k++)
     {
         int calc = (dp(arr , i ,k ) +dp(arr , k+1 , j ))+(long long )arr[i].first * arr[k].second * arr[j].second; 
         if(stat >calc )
@@ -41,7 +41,6 @@ void print(int i =0 , int j = n-1 )
 }
 int main ()
 { 
-    int t = 1 ;
     while(cin>>n && n !=0)
     {
         memset( memo , -1 , sizeof memo );
@@ -57,7 +56,6 @@ int main ()
     //         cout<<toprint[i][j]<<" ";
     //     cout<<endl;
     // }
-        printf("Case %d: " ,t++ );
         print();
         cout<<endl;
     } 

@@ -10,8 +10,9 @@ int main() {
         set <pair<int,int>>com;
         cin >>n;
         if(n==0)
-            return 0;
-
+        {
+            cout<<endl;return 0;
+        }
         int arr[n];
         for (int i =0 ;i <n ;i++)
             cin >>arr[i];
@@ -33,7 +34,7 @@ int main() {
                 }
             }
         }
-
+        
         int sum =0 ;
         for (auto i :com)
         {

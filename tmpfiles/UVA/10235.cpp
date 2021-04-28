@@ -7,7 +7,7 @@ using namespace std;
 #define ss second
 #define debug(x) cout<<(#x)<<": \""<<x<<"\""<<endl
 #define debugVec(vec) cout<<(#vec)<<": "; for (auto& i: vec) cout<<i<<" "; cout<<endl
-
+ 
 template<class A, class B> ostream& operator <<(ostream& out, const pair<A, B> &p) {
     return out << "(" << p.ff << ", " << p.ss << ")";
 }
@@ -23,20 +23,24 @@ typedef long long ll;
 typedef unsigned long long ull;
 
 bool isprime[(int)1e6 +1 ];
+vector<int>primes; 
 void sieve ()
 {
     memset(isprime , 1 , sizeof isprime);
-    isprime[0]= 0 ;
-    for(int i =2 ; i <=(1e6) ;i++)
+    primes.pb(1) , primes.pb(2);
+    for(int i =3 ; i*i <=(1e6) ;i+=2)
     {
         if(isprime[i])
-            for(int j = i*2 ; j<=(1e6); j+=i)
+        {
+            for(int j = i*2 ; j<=(1e6)+1 ; j+=i)
                 isprime[j]=0 ;
+            primes.pb(i);
+        }
     }
 
 }
 
-int n ; 
+int n ;
 int reverse (int num )
 {
     int tmp =num ;
@@ -49,17 +53,19 @@ int reverse (int num )
         tmp /=10;
     }
     return neww ;
+
+
 }
 void solve(){
     if(isprime[n])
     {
-        int rev = reverse(n);
-        if(isprime[rev] &&rev !=n )
+        if(isprime[reverse(n)])
             printf("%d is emirp.\n", n );
         else 
-            printf("%d is prime.\n", n );
+            printf("%d is prime.\n",n );
     }
-    else printf("%d is not prime.\n", n );
+    else 
+        printf("%d is not prime.\n",n );
 
 }
 int main()

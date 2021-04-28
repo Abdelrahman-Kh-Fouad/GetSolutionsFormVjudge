@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std ;
-/*ifstream cin ("../cin.txt");
-ofstream cout ("../cout.txt");*/
+ifstream in ("../in.txt");
+ofstream out ("../out.txt");
 char s[22][22];
 char land ;
 int n,m;
@@ -19,10 +19,7 @@ void myplace(int x, int y )
             s[x][y]='.';
             mmax++;
             for (int i =0 ; i< 4 ;i++)
-            {
-                if (x+r[i]<n && x+r[i]>=0)
-                    myplace(x+r[i]  ,(((y+c[i])  % (m))+(m))%(m));
-            }
+                myplace((((x+r[i] ) % (n))+(n))%(n),(((y+c[i])  % (m))+(m))%(m));
         }
 
 
@@ -36,7 +33,7 @@ void myplace(int x, int y )
 int main()
 {
     int x,y;
-    while ((cin >> n >>m))
+    while ((in >> n >>m))
     {
         sum.clear();
         sum.push_back(0);
@@ -45,11 +42,11 @@ int main()
         string temp;
         for (int i =0 ;i <n ;i++)
         {
-            cin>>temp;
+            in>>temp;
             for (int j =0 ; j <m ;j++)
                 s[i][j]=temp[j];
         }
-        cin>>x>>y;
+        in>>x>>y;
         land=s[x][y];
         myplace(x,y);
         mmax=0;
@@ -68,7 +65,7 @@ int main()
             }
 
         }
-        cout<<*max_element(sum.begin(),sum.end())<<endl;
+        out<<*max_element(sum.begin(),sum.end())<<endl;
 
 
 

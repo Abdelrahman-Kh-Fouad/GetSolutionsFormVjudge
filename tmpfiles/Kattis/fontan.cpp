@@ -8,7 +8,27 @@ using namespace std;
 
 typedef long long ll;
 typedef unsigned long long ull;
-
+bool used [100][100];
+void go(vector<vector<char>>&arr , int x ,int y )
+{
+    if(used[x][y])
+        return ;
+    used[x][y] =1 ;
+    int n = sz(arr) , m =sz(arr.front());
+    if( x+1 < n)
+    {
+        char down = arr[x+1][y];
+        if(down=='.')
+            arr[x+1][y]='V' , go(arr , x+1 , y );
+        else if(down =='#')
+        {
+            if(y-1 >=0)
+                arr[x][y-1]='V' , go(arr ,x, y-1);
+            if(y+1 <m)
+                arr[x][y+1]='V' , go(arr ,x, y+1);
+        }
+    }
+}
 int main()
 {
     ios::sync_with_stdio(0);
@@ -17,34 +37,25 @@ int main()
     int n , m ;cin>>n >> m ;
     vector<vector<char>> arr ; 
     arr.assign(n , vector<char>(m) );
+    vector<pair<int,int>>start;
     for(int i =0 ;i < n ;i++)
         for(int j =0 ;j < m ;j++)
-            cin>>(arr)[i][j];
-    bool f =1 ; 
-    while(f)
-    {
-        f= 0 ;
-        for(int i =1 ;i < n ;i++)
         {
-            for(int j =0 ;j < m ;j++)
-            {
-                if(arr[i-1][j]=='V' )
-                {
-                    if(arr[i][j]=='.')f |=1 , arr[i][j]='V';
-                    else if(arr[i][j]=='#' )
-                    {
-                        if(j+1 < m && arr[i-1][j+1]=='.') f|=1 , arr[i-1][j+1]='V';
-                        if(j-1 >=0 && arr[i-1][j-1]=='.') f|=1 , arr[i-1][j-1]='V'; 
-                    }
-                }
-            }
+            cin>>(arr)[i][j];
+            if(arr[i][j]=='V')
+                start.push_back({i ,j});
         }
-    }        
+    memset(used , 0 , sizeof used );
+    for(auto &i : start)
+        go(arr , i.ff ,i.ss);
+
+    
     for(int i =0 ;i < n ;i++)
     {
         for(int j =0 ;j < m ;j++)
             cout<<arr[i][j];
         cout<<endl;
-    }
+    }        
     return 0 ; 
 }
+

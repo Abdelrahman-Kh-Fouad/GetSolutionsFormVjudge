@@ -1,17 +1,19 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
 int main()
 {
-    long long temp;
-    while (1)
+    int temp ;
+    while (cin>>temp ,temp!=0)
     {
-        cin>>temp;
-        if (temp==0)
-            return 0 ;
-
-        cout<<(((long long )sqrt(temp)==sqrt(temp))?"yes":"no")<<endl;
+        bool f=false;
+        for (int i =1 ; i<=temp ;i++)
+        {
+            if (temp%i==0)
+                f^=1;
+        }
+        cout<<((f)?"yes":"no")<<endl;
     }
 
     return 0;

@@ -9,30 +9,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-ll bigger(ll target )
+ll solve(ll target )
 {
-	ll l =0 , r = 1e9;
-	ll mid =-1;
-	ll res =-1;
-	while (l <= r )
-	{
-		mid = l +(r-l)/2;
-		if (mid*(mid+1)/2 >=target )
-			res = mid , r =mid-1;
-		else
-			l = mid+1;
-	}
-	return res ;
+	return (- 1 + ceil (sqrt(1+(8*target))))/2;
 }
 int main() {
-
 	ll n , d ;
 	while(cin>>n>>d)
-	{
-		--n;
-		ll ind = bigger(d+ n*(n+1)/2 );
-		cout<<ind<<endl;
-	}
-
+		cout<< solve(d + n*(n+1)/2) <<endl;
+	
 	return 0;
 }

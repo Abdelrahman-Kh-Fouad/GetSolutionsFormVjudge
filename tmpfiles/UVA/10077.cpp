@@ -60,4 +60,4 @@ int main()
         solve(m ,n );
     }
     return 0 ; 
-}
+}2

@@ -30,7 +30,6 @@ void dfs (vector<vector<int>>adj , int node ){
         dfs(adj, next);
     }
 }
-int t ; 
 void solve()
 {
     char limit ;
@@ -51,15 +50,14 @@ void solve()
             dfs(adj , i ); 
         }
     }
-    cout <<res<<"\n";
-    if(t >0)cout <<"\n";
+    cout <<res<<endl;
 }
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-    cin>>t ;
+    int t ; cin>>t ;
     while(t--){
         solve();
     }

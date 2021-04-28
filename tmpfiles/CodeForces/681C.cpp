@@ -38,17 +38,11 @@ void solve()
             res<<com <<" "<<tar<<"\n";
         }
         else if(com=="removeMin")
-        {
-            if(!ch.empty())ch.pop();
-            else 
-                res<<"insert 0\n";
-            
-            res<< com <<"\n";
-        }
+            ch.pop() ,res<< com <<"\n";
         else 
         {
             cin>> tar ; 
-            if((!ch.empty() && tar != ch.top()) || ch.empty())
+            if(tar != ch.top() || !ch.empty())
             {
                 while(!ch.empty() &&  ch.top() < tar)
                     ch.pop() , res<<"removeMin\n";

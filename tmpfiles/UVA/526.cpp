@@ -50,12 +50,7 @@ void trace (int i = 0 , int j = 0 )
         int opt = dp(i , j);
         int minn = min (min(insert , del ) ,change);
 
-         if(change==minn)
-        {
-            res<<cnt++<<" Replace " <<  i+sheft+1<<","<<b[j]<<"\n";
-            trace(i+1 ,j+1 );
-        }
-        else if(minn ==insert)
+        if(minn ==insert)
         {
             res<<cnt++<<" Insert "<<i+sheft+1<<","<<b[j] <<endl,sheft++;
             trace(i ,j+1);
@@ -65,13 +60,17 @@ void trace (int i = 0 , int j = 0 )
             res<<cnt++<<" Delete "<<i+sheft+1<<endl ,sheft--;
             trace(i+1 ,j);
         }
-
+        else if(change==minn)
+        {
+            res<<cnt++<<" Replace " <<  i+sheft+1<<","<<b[j]<<"\n";
+            trace(i+1 ,j+1 );
+        }
     }
     
 }
 int main ()
 {
-    //freopen("in" ,"r",stdin);
+    freopen("in" ,"r",stdin);
     int k =0;
     while(getline(cin ,a ) && getline(cin,b))
     {

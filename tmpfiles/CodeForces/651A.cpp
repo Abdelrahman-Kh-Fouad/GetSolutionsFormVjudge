@@ -4,9 +4,9 @@ int main() {
     int a , b ;
     cin>>a>>b;
     int m =0 ;
-    if (a < 2 && b < 2)
+    if (a<=2 && b <=2 )
     {
-        cout<<0 <<endl;
+        cout<<1 <<endl;
         return 0;
     }
      while (a > 0 && b>0 )

@@ -26,24 +26,25 @@ string s ;
 vector<ull>fact; 
 void solve()
 {       
-    cin >> s ;
+    getline(cin ,s );
     unordered_map<int,int>mp ; 
     for(auto i : s ) mp[i]++;
     ull down =1 ; 
     for(auto &i : mp )
         down *= fact[i.ss]; 
     
-    printf("Data set %d: %lld\n" , k++ , (ull)fact[sz(s)] / down );
+    printf("Data set %d: %d\n" , k++ , fact[sz(s)] / down );
 
 }
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
-    fact.assign(21 ,1 );
-    for(ll i = 1;i  <=20 ;i++ )
+    fact.assign(13 ,1 );
+    for(int i = 1;i  <=12 ;i++ )
         fact[i]= i * fact[i-1];
     int t ; cin>>t ;
+    getline(cin ,s );
     while(t--)
     {
         solve();

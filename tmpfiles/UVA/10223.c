@@ -10,8 +10,5 @@ for i in range(1, 1001):
     cat.get(res , 0)
     cat[res]=i
 while True :
-    try :
-        n = int (input())
-    except:
-        break
+    n = int (input())
     print(cat[n])

@@ -46,10 +46,10 @@ int main()
     while (cin>>n)
     {
         vector<int>tmp(n,1);
-        if (cnt !=1 )cout<<endl;
+
         cout<<"Case "<<cnt++<<":\n";
         go(tmp);
-        
+        cout<<endl;
     }
 
     return 0;

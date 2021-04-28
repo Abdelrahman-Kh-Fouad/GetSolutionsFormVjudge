@@ -21,10 +21,10 @@ template<class A> ostream& operator <<(ostream& out, const vector<A> &v) {
 }
 typedef long long ll;
 typedef unsigned long long ull;
-ll memo[100][500];
-ll dp(vector<int>&coins , int n ,int ind =0  ,ll sum = 0 )
+ll memo[100][100];
+ll dp(vector<int>&coins , int n ,int ind =0  ,int sum = 0 )
 {
-    if(sum > n|| ind > sz(coins) ) return 0 ;
+    if(sum > n ) return 0 ;
     if(sum==n )return 1;
     ll &stat =memo[ind][sum];
     if(stat !=-1 )return stat ;
@@ -32,7 +32,7 @@ ll dp(vector<int>&coins , int n ,int ind =0  ,ll sum = 0 )
     for(ind ; ind < sz(coins) ;ind++ )res +=dp(coins , n , ind, sum+coins[ind]);
     return stat =res ;
 }
-ll getWays(int n , vector<int>&coins)
+int getWays(int n , vector<int>&coins)
 {
     memset(memo ,-1 , sizeof memo);
     return dp(coins ,n);

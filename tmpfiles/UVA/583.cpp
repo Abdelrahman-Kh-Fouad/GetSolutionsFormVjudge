@@ -1,16 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std ;
-vector<long long >primes ; 
+vector<int>primes ; 
 vector<int>is_prime; 
 void sieve ()
 {
-    is_prime.assign(46349 , 1 );is_prime[0]=is_prime[1] = 0 ;
+    is_prime.assign(46342 , 1 );is_prime[0]=is_prime[1] = 0 ;
     
-    for(long long i =2;i<=46345 ; i++)
+    for(long long i =2;i<=46341 ; i++)
     {
         if(is_prime[i])
         {
-            for(long long  j = i *2 ; j * j <=46345 ; j+= i )
+            for(long long  j = i *2 ; j * j <=46341 ; j+= i )
                 is_prime[j]=0;
             primes.push_back(i);
         }
@@ -19,7 +19,7 @@ void sieve ()
 int main()
 {   
     sieve();
-    long long  n ;  
+    int n ;  
     while(cin>>n , n)
     {
         printf("%d = " , n );
@@ -27,7 +27,7 @@ int main()
         if(n < 0 ) cout<<"-1 x ";
         n = abs (n );
 
-        for(long long  i = 0  ; i < primes .size() && primes[i]*primes[i] <=n   ;i++)
+        for(int i = 0  ; primes[i]*primes[i] <=n  && n!=1 ;i++)
         {
             while(n % primes[i] ==0 )
             {

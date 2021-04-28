@@ -34,26 +34,14 @@ pair<int,int>dp(vector<vector<int>>&adj  ,  int node )
     for(int &i : adj[node])
     {
         pair<int ,int >tmp = dp(adj , i);
-        if(tmp.ss+1 > res.ss )
-            res.ss = tmp.ss+1 ,res.ff = tmp.ff ; 
-        else if(tmp.ss+1 == res.ss && tmp.ff < res.ff)
-            res.ss = tmp.ss+1 , res.ff = tmp.ff ;
+        if(tmp.ss > res.ss )
+            res.ss = tmp.ss ,res.ff = tmp.ff ; 
+        else if(tmp.ss == res.ss && tmp.ff < res.ff)
+            res.ff = tmp.ff ;
     }
+    res.ss++ ;
     return memo[node] = res ; 
 }
-
-// pair<int,int>res ={-1 ,-1 };
-// void go(vector<vector<int>> &adj , int node ,int d =0  )
-// {
-//     if(d > res.ss )
-//         res.ss = d , res.ff = node ; 
-//     else if (res.ss== d && res.ff > node )
-//         res.ff = node ;
-
-//     for(int &i : adj[node])
-//         go(adj, i , d+1 );
-    
-// }
 void solve()
 {   
     int start ; cin>>start; 
@@ -64,8 +52,17 @@ void solve()
     
     for(int i =0 ;i <= 100 ; i ++)
         memo[i]={-1 ,-1 };
-    pair<int,int> res = dp(adj ,start );
-    printf("Case %d: The longest path from %d has length %d, finishing at %d.\n\n",++tt , start , res.ss , res.ff);
+    pair<int,int>res ={-1 ,-1 } ; 
+    for(int i =1 ;i <=n ; i++)
+    {
+        pair<int,int>tmp = dp(adj ,i );
+        if(tmp.ss > res .ss )
+            res = tmp ; 
+        else if(tmp.ss == res.ss && tmp.ff < res.ff)
+            res.ff = tmp.ff ;
+    }
+    printf("Case %d: The longest path from %d has length %d, finishing at %d.\n\n",++tt , start , res.ss-1 , res.ff);
+
     
 }
 int main()

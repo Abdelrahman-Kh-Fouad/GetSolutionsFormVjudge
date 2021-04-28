@@ -21,7 +21,6 @@ template<class A> ostream& operator <<(ostream& out, const vector<A> &v) {
 }
 typedef long long ll;
 typedef unsigned long long ull;
-int k =0 ;
 void solve()
 {
     int n ;cin >> n ;
@@ -33,7 +32,7 @@ void solve()
     ll res =0 ; 
     for(int i =0 ;i <n ;i++)
         res+=(ll)a[i]*b[i];
-    cout<<"Case #"<<++k<<": "<<res<<endl;
+    cout<<res<<endl;
 }
 int main()
 {

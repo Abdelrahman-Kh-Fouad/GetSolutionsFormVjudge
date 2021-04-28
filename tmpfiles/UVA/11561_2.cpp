@@ -4,20 +4,20 @@ char arr[50][50];
 int m,n;
 int xx[]={0,0,1,-1};
 int yy[]={1,-1,0,0};
-int go(int i, int j )
+int sum=0;
+void go(int i, int j )
 {
-    int sum=0;
     if(arr[i][j]=='.'||arr[i][j]=='G' )
     {
         sum+=(arr[i][j]=='G') ? 1:0;
         arr[i][j]='*';
         for(int k =0 ;k < 4 ;k++)
             if(arr[i+xx[k]][j+yy[k]]=='T')
-                return sum;
+                return ;
         for(int k =0 ;k <4 ;k++)
-            sum+=go(i+xx[k],j+yy[k]);
+            go(i+xx[k],j+yy[k]);
+
     }
-    return sum;
 }
 int main()
 {
@@ -35,7 +35,9 @@ int main()
             }
         }
         arr[pi][pj]='.';
-        cout<<go(pi,pj)<<endl;
+        go(pi,pj);
+        cout<<sum<<endl;
+        sum=0;
     }
     return 0;
 }

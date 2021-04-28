@@ -12,7 +12,7 @@ int main()
         m <<=16 ;
         m %=g;
         int res = (g - m)%g  ;  
-        printf("%02X %02X\n" , res >> 8 ,res % (1<<8));
+        printf("%02X %02X \n" , res >> 8 ,res % (1<<8));
         
     }
 }

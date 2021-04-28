@@ -21,16 +21,16 @@ template<class A> ostream& operator <<(ostream& out, const vector<A> &v) {
 }
 typedef long long ll;
 typedef unsigned long long ull;
-ll arr[(int)1e5 +1 ];
+int arr[(int)1e5 +1 ];
 int n ; 
-ll memo[(int)1e5 +1];
-ll dp(int ind )
+int memo[(int)1e5 +1];
+int dp(int ind )
 {
-    ll &stat = memo[ind];
+    int &stat = memo[ind];
     if(stat !=-1)return stat ;
+    stat=1e6; ;
     if(ind +1 >= n )
         return stat = 0 ;
-    stat =INT_MAX;
     if(ind+1 < n )stat =min(stat , dp(ind+1 )+abs(arr[ind+1] -arr[ind]));
     if(ind+2 < n )stat =min(stat , dp(ind+2 )+abs(arr[ind+2] -arr[ind]));
     return stat ;
@@ -38,6 +38,7 @@ ll dp(int ind )
 void solve()
 {
     cin>>n ; 
+    
     for(int i =0 ;i  <n ;i++)cin>>arr[i];
     memset(memo , -1 , sizeof memo);
     cout<<dp(0)<<endl;

@@ -26,13 +26,13 @@ int memo[31];
 int dp(int x )
 {
     if(x==0)return 1 ;
-    if(x==1)return 0 ;
-    if(x==2)return 3 ;
-    if(x==3)return 0 ;
+    if(x==1)return 3 ;
+    
     int &stat = memo[x];
     if(stat!=-1)return stat ;
-    int res = 0;    
-    res =4*dp(x-2) - dp(x-4);
+    int res = 3*dp(x-2);
+    for(int i = 4 ;i<= x ;i+=2)
+        res +=2*dp(x-i);
     return stat = res ;
 }
 int main()

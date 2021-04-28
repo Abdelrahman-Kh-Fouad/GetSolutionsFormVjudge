@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#define ll  long long
+#define ll unsigned long long
 using namespace std;
 ll go (ll n )
 {

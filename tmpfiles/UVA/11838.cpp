@@ -1,21 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std ;
-vector<bool >used ;
-stack<int>element;
-void dfs(vector<vector<int>>&adj , int node ,bool f =1 )
+set<int >used ;
+vector<int>element;
+void dfs1(vector<vector<int>>&adj , int node )
 {
-    used[node]=1;
+    used.insert(node);
     for(auto i : adj[node])
-        if(!used[i])
-            dfs(adj , i,f);
-    if(f)
-        element.push(node);
+        if(!used.count(i))
+            dfs1(adj , i);
+    element.push_back(node);
+}
+void dfs2(vector<vector<int>>&adj , int node )
+{
+    used.insert(node);
+    for(auto i : adj[node])
+        if(!used.count(i))
+            dfs2(adj,i);
 }
 int main() {
     int n ,m ;
     while(cin>>n>>m , n!=0 && m!=0)
     {
-        vector<vector<int>> adj(n+1) ;vector<vector<int>> adjR(n+1);
+        vector<vector<int>> adj(n+1) ,adjR(n+1);
         int from , to , val ;
         for (int i =0 ;i < m ;i++)
         {
@@ -27,26 +33,26 @@ int main() {
                 adj[to].push_back(from);
 
         }
-
         for(int i =1 ; i <= n ;i++)
             for(auto j : adj[i])
                 adjR[j].push_back(i);
-
-
-         used.assign(n+1,false);
-        for(int i =1 ;i <=n ;i++)
-            if(!used[i])dfs(adj , i );
-
-
-        used.assign(n+1,false);
-        int cnt =0;
-        while (!element.empty())
+        /*for(int i =1 ; i <= n ;i++)
         {
-            int tmp = element.top();
-            element.pop();
-            if(!used[tmp])
-                dfs(adjR , tmp,0),cnt++;
-        }
+            cout<<i<<" - >";
+            for(auto j : adj[i])
+                cout<<j<<" ";
+            cout<<endl;
+        }*/
+        element.clear(); used.clear();
+        for(int i =1 ;i <=n ;i++)
+            dfs1(adj , i );
+        used.clear();
+        int cnt =0;
+        reverse(element.begin() , element.end());
+        for (auto i : element)
+            if (!used.count(i))
+                cnt++,dfs2(adj , i );
+
         if(cnt>1)
             cout<<0<<endl;
         else
@@ -54,3 +60,4 @@ int main() {
     }
     return 0;
 }
+
