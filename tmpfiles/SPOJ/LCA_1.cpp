@@ -21,38 +21,49 @@ template<class A> ostream& operator <<(ostream& out, const vector<A> &v) {
 }
 typedef long long ll;
 typedef unsigned long long ull;
-
-bool calc(vector<int>&arr , int k)
-{
-    for(int i =0 ;i < (int)sz(arr)-1 ;i++)
+int parent[1001];
+vector<int>PathToRoot(int node )
+{   
+    int cur = node ;
+    vector<int>path ;
+    while(cur !=-1)
     {
-        if(abs(arr[i+1] -arr[i])>k )return 0;
-        if(abs(arr[i+1] -arr[i])==k)k--;
-    }        
-    return 1 ;
+        path.pb(cur);
+        cur =parent[cur];
+    }
+    return path;
 }
-int k =1 ; 
 void solve()
 {
     int n ; cin>>n ;
-    vector<int>arr (n+1);
-    arr[0]= 0; 
-    for(int i =1 ;i  <=n ;i++)cin>>arr[i];
-
-    int l = 1 ,  r = 1e7 ;
-    int mid ;
-    int res =1 ; 
-    while(l<=r )
+    memset(parent , -1 ,sizeof parent);
+    for(int i =0; i  <n ;i++)
     {
-        mid = l + (r-l)/2;
-        if(calc(arr , mid))
-            res = mid , r = mid -1;
-        else 
-            l=mid+1 ;
+        int m ; cin>>m ;
+        int tt ;  
+        for(int j =0 ; j < m ;j++)
+            cin>>tt , parent[tt-1]=i;
     }
-    printf("Case %d: %d\n", k++ , res );
+    int q ; cin>>q ; 
+    while(q--)
+    {
+        int l ,r ; 
+        cin>> l >> r ; 
+        vector<int>path1 = PathToRoot(l-1) ,path2 = PathToRoot(r-1);
+        
+        set<int>inpath2(all(path2));
+        int res = -1; 
+        for(int i = 0 ; i <sz(path1) ; i+=1)
+            if(inpath2.count(path1[i]))
+            {
+                res = path1[i];
+                break;
+            }
 
-}
+        cout <<res +1<<endl;
+        
+    }
+}   
 int main()
 {
     ios::sync_with_stdio(0);

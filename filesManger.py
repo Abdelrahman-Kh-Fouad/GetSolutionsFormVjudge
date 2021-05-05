@@ -1,5 +1,6 @@
 import os
 import const
+
 def OnlyFiles(node):
     res = True
     for next in os.listdir(node):
@@ -14,14 +15,25 @@ def GetNameOfFile(node):
             break
         result +=i
     result = result[::-1]
+def CheckIfCOrPy(path):
+    file = open(path)
+    for line in file :
+        if line.find("#include") != -1:
+            return True ;
+    return False
 
 def Getext(path):
-    path = path[::-1]
+    npath = path[::-1]
     res = ''
-    for i in path:
+    for i in npath:
         if i =='.':break
         res +=i
     res = res[::-1]
+
+    if res == "c" :
+        if not CheckIfCOrPy(npath[::-1]):
+            res ='py'
+
     return res
 
 def DelDir(path):
@@ -63,7 +75,7 @@ def TraverseDirs(node):
             numberOfSolution = 0
             for solution in os.listdir(curPath):
                 solutionFileName = solution
-                ext = Getext(solutionFileName)
+                ext = Getext(curPath+'/'+solutionFileName)
                 copy(curPath+'/'+solutionFileName , DelDir(curPath)+'/'+problem+AddCountOtNot(numberOfSolution)+'.'+ext)
                 RemoveFile(curPath+'/'+solutionFileName)
                 numberOfSolution+=1
