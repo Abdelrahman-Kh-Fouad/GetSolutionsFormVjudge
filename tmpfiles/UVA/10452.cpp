@@ -53,7 +53,6 @@ int main()
                    if (arr[i][j]=='#')
                     endd.first=i , endd.second = j;
                 }
-        cout<< start.first <<" "<<start.second<<endl;
         DFS(arr,start,"");
         f=1;ch.clear();
 

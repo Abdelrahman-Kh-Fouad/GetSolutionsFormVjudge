@@ -23,41 +23,41 @@ typedef long long ll;
 typedef unsigned long long ull;
 
 
-
-
 string s , t ;
-int memo[1001][1001];
+int memo[1002][1002];
 int dp(int i =0 , int j =0 ) 
 {
     if(i==s.length() && j ==t.length())return 0 ;
-    if(i==s.length()) return dp(i , j +1 )+1 ;
-    if(j == t.length()) return dp(i +1 , j )+1;
+    if(i==s.length()) return dp(i , t.size()) + t.size()- j  ;
+    if(j == t.length()) return dp(s.size() , j ) + s.size() - i ;
 
     int &stat = memo[i][j];
     if(stat !=-1)return stat ;
-    if(s[i] ==t[j])return stat = dp(i +1 ,j +1 );
-    return stat =min({dp(i+1 , j )  , dp(i , j+1 ) ,dp(i+1 , j+1)})+1 ;
+    stat = INT_MAX;
+    if(s[i] ==t[j]) return stat = dp(i +1 ,j +1 );
+    return stat =min( { dp(i+1 , j )+1   , dp(i , j+1 )+1  ,dp(i+1 , j+1) +1 }) ;
 
 }
 int cnti , cntj ; 
 void trace (int i ,int j )
 {
     if(i==s.length() && j ==t.length())return;
-    else if(i==s.length()) printf("INSERT %d %c\n" , cnti++ + 1  , t[cntj+1]) , trace (i ,j+1);
+    else if(i==s.length()) printf("INSERT %d %c\n" , cnti++ + 1  , t[cntj++]) , trace (i ,j+1) ;
     else if(j == t.length()) printf("DELETE %d\n" , cnti+1),cntj++,  trace(i+1 , j);
-
-    if(s[i] == t[j])cnti++ ,cntj++ , trace(i+1 , j+1 );
-    else 
+    if(i<s.length() && j < t.size())
     {
-        int dpval = memo[i][j];
+        if(s[i] == t[j])cnti++ ,cntj++ , trace(i+1 , j+1 );
+        else 
+        {
+            int dpval = memo[i][j];
 
-        if(memo[i+1 ][j] +1 == dpval)
-            printf("DElETE %d\n" ,cnti+1 ) , trace(i+1 , j );
-        else if(memo[i][j+1] +1 ==dpval)
-            printf("INSERT %d %c\n" , cnti++ +1 , t[cntj++]) ,trace (i ,j+1 );
-        else if(memo[i+1][j+1]+1 == dpval )
-            printf("REPLACE %d %c\n" ,cnti++ +1  , t[cntj++] ),trace(i+1 ,j +1);
-
+            if(dp(i+1 , j)+1 == dpval  )
+                printf("DELETE %d\n" ,cnti+1 ) , trace(i+1 , j );
+            else if(dp(i+1 , j+1 ) +1 == dpval )
+                printf("REPLACE %d %c\n" ,cnti++ +1  , t[cntj++] ),trace(i+1 ,j +1);
+            else if(dp(i ,j+1)+1   ==dpval  )
+                printf("INSERT %d %c\n" , cnti++ +1 , t[cntj++]) ,trace (i ,j+1 );
+        }
     }
 }
 void solve()
@@ -68,15 +68,11 @@ void solve()
     cout<<dp()<<endl;
     trace(0 ,0);
 
-
 }
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
-
-
     solve();
-    
     return 0 ; 
 }

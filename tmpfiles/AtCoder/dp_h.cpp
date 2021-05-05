@@ -23,7 +23,7 @@ typedef long long ll;
 typedef unsigned long long ull;
 int n , m ; 
 char arr[1001][1001];
-ll memo[101][101];
+ll memo[1001][1001];
 ll dp(int x , int y )
 {
     if(x >=n || y>=m )return (int)0;
@@ -33,7 +33,7 @@ ll dp(int x , int y )
     if(stat !=-1)return memo[x][y]; 
     return stat= (dp(x+1 ,y ) +dp(x, y+1)) % (ll)(1e9+ 7 );
 }
-int solve()
+void solve()
 {
     cin>>n>>m;
     for(int i =0 ;i  <n ;i++)
@@ -48,6 +48,6 @@ int main()
     ios::sync_with_stdio(0);
     cin.tie(0);
     solve();
-    
+   
     return 0 ; 
 }

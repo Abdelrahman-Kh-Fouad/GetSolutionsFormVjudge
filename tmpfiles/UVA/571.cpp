@@ -24,8 +24,8 @@ public :
 inline vector<pair<int,int>>val(int a , int b ){
     return  { {ac, b},{a , bc}
     ,{0 , b },{a, 0 }
-    ,{min (a + b , ac) , max(ac -a - b , 0 )}
-    ,{max(bc - b  - a, 0 ),  min (a + b , bc) }};
+    ,{min (a + b , ac) , max( b - (ac -a ) , 0 )}
+    ,{max(  a - (bc - b ), 0 ),  min (a + b , bc) }};
 }
 
 void solve()
@@ -45,7 +45,7 @@ void solve()
             if(!vis[i.ff ][i.ss])
                 vis[i.ff][i.ss]=1 , q.push(new Node(i.ff , i.ss , k , cur));
         }
-        if(cur->b == n ||cur->a == n ){
+        if(cur->b == n  ){
             res = cur ;
             break;
         }

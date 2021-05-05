@@ -44,7 +44,7 @@ void solve()
     for(auto &i : s )
     {
         if(i >='a' && i<='z')
-            sum+= i-'a';
+            sum+= i-'a'+1;
         if(i>='A' && i<='Z')
             sum+=i-'A' + 27 ;
     }

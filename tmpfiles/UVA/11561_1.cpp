@@ -1,37 +1,43 @@
-#include <stdio.h>
-#include <string.h>
-int n, m, cnt;
-int dir[4][2] = {{0,1},{1,0},{0,-1},{-1,0}};
-char used[55][55] = {}, g[55][55];
-void dfs(int x, int y) {
-    if(g[x][y] == '#' || used[x][y])
-        return;
-    if(g[x][y] == 'G')
-        cnt++;
-    used[x][y] = 1;
-    int i;
-    for(i = 0; i < 4; i++)
-        if(g[x+dir[i][0]][y+dir[i][1]] == 'T')
-            return;
-    for(i = 0; i < 4; i++)
-        dfs(x+dir[i][0], y+dir[i][1]);
+#include <bits/stdc++.h>
+using namespace std;
+char arr[50][50];
+int m,n;
+int xx[]={0,0,1,-1};
+int yy[]={1,-1,0,0};
+int sum=0;
+void go(int i, int j )
+{
+    if(arr[i][j]=='.'||arr[i][j]=='G' )
+    {
+        sum+=(arr[i][j]=='G') ? 1:0;
+        arr[i][j]='*';
+        for(int k =0 ;k < 4 ;k++)
+            if(arr[i+xx[k]][j+yy[k]]=='T')
+                return ;
+        for(int k =0 ;k <4 ;k++)
+            go(i+xx[k],j+yy[k]);
+
+    }
 }
-int main() {
-    int i, j;
-    while(scanf("%d %d", &n, &m) == 2) {
-        for(i = 0; i < m; i++)
-            scanf("%s", &g[i]);
-        memset(used, 0, sizeof(used));
-        cnt = 0;
-        j = n;
-        for(i = 0; i < m && j == n; i++) {
-            for(j = 0; j < n; j++)
-                if(used[i][j] == 0 && g[i][j] == 'P') {
-                    dfs(i, j);
-                    break;
-                }
+int main()
+{
+    memset(arr,'*',sizeof(arr));
+    while(cin>>m>>n)
+    {
+        int pi,pj;
+        for(int i =0 ;i <n ;i++)
+        {
+            for(int j =0 ;j < m;j++)
+            {
+                cin>>arr[i][j];
+                if(arr[i][j]=='P')
+                    pi=i,pj=j;
+            }
         }
-        printf("%d\n", cnt);
+        arr[pi][pj]='.';
+        go(pi,pj);
+        cout<<sum<<endl;
+        sum=0;
     }
     return 0;
 }

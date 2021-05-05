@@ -46,7 +46,7 @@ void solve()
                 ch.insert({i.ff , sec});
                 used.insert(i.ff);
                 if(i.ff == sec)
-                    res +=(el[sec ] * (el[sec]-1))/2 ;
+                    res +=((ull)el[sec ] * (ull)(el[sec]-1))/2 ;
                 else 
                     res +=el[sec] * i.ss ;
             }

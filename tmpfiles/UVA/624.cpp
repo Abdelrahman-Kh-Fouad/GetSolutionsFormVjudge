@@ -1,41 +1,40 @@
-#include <bits//stdc++.h>
-#define f first
-#define s second
-#define getbit(x,bit) (bool )((x)&(1<<(bit)))
-using namespace std;
-//ifstream in("../test.txt");
-bool cmp(pair<int,vector<int>>&x,pair<int,vector<int>>&y )
+#include <bits/stdc++.h>
+using namespace std ;
+vector<int>res ;
+vector<int>tmp;
+int maxx =-1;
+int sum ;
+void go (vector<int>&arr , int ind ,int s )
 {
-    if (x.f!=y.f )return x.f>y.f;
-    else return x.s.size() < y.s.size();
+
+    if(s > sum)
+        return;
+    if(ind==arr.size())
+    {
+        if(s>maxx )
+        {
+            maxx=s ;
+            res.assign(tmp.begin() ,tmp. end() );
+        }
+        return;
+    }
+    tmp.push_back(arr[ind]);
+    go(arr , ind+1 , s+arr[ind]);
+    tmp.pop_back();
+    go(arr , ind+1 , s);
 }
 int main() {
-    string s ;
-    while (getline(cin,s))
+    int  n ;
+    while(cin>>sum>>n)
     {
-        stringstream sin(s);
-        int m,n ;sin>>m>>n;
-        vector<int>v(n);
-        for(int i=0;i<n;i++)sin>>v[i];
-        vector< pair<int,vector<int>> >res;
-        for (int i =0 ;i <= (1<<n)-1 ;i++ )
-        {
-            vector<int>tmp;int sum=0;
-            for (int j =0 ;j < n ;j++)
-                if (getbit(i,j))
-                    sum+=v[j] , tmp.push_back(v[j]);
-            res.push_back({sum,tmp});
-        }
-        sort(res.begin() , res.end() , cmp);
-        for (auto i : res)
-        {
-            if (i.f<=m)
-            {
-                for (auto j : i.s)cout<<j<<" ";
-                cout<<"sum:"<<i.f<<endl;
-                break;
-            }
-        }
+        vector<int>arr(n);
+        for(int i =0 ;i < n ;i++)
+            cin>>arr[i];
+        go(arr , 0,0);
+        for(auto i : res )cout<<i<<" ";
+        cout<<"sum:"<<maxx<<endl; ;
+        maxx=-1;
+
     }
     return 0;
 }

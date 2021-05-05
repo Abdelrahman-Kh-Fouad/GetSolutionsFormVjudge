@@ -19,50 +19,47 @@ template<class A> ostream& operator <<(ostream& out, const vector<A> &v) {
     }
     return out << "]";
 }
-int n ; 
 typedef long long ll;
 typedef unsigned long long ull;
+
+bool calc(vector<int>&arr , int k)
+{
+    for(int i =0 ;i < (int)sz(arr)-1 ;i++)
+    {
+        if(abs(arr[i+1] -arr[i])>k )return 0;
+        if(abs(arr[i+1] -arr[i])==k)k--;
+    }        
+    return 1 ;
+}
+int k =1 ; 
 void solve()
 {
-    vector<vector<int>>adj(n+1 );
-    int start ;
-    while(cin>> start && start != 0)
-    {
-        int to ;
-        while(cin>> to && to !=0)
-            adj[start].pb(to);
-    }
-    int k ; cin>> k ;
-    for(int i =0 ;i < k ;i++)
-    {
-        int v ; cin>> v ;
-        bool used[n+1]={0};
-        queue<int>q ;
-        for(int &i :adj[v])q.push(i); 
-        while (!q.empty())
-        {
-            int cur= q.front();
-            q.pop();
-            used[cur] =1 ;
-            for(int &i : adj[cur])
-                if(!used[i]) q.push(i) , used[i]= 1 ;
-        }
+    int n ; cin>>n ;
+    vector<int>arr (n+1);
+    arr[0]= 0; 
+    for(int i =1 ;i  <=n ;i++)cin>>arr[i];
 
-    
-        vector<int>res ; 
-        for(int i =1 ; i<=n ;i++)
-            if(!used[i])res.pb(i);
-        cout<<sz(res)<<" ";
-        for(int &i : res)cout<<i<<" ";
-        cout<<endl;
+    int l = 1 ,  r = 1e7 ;
+    int mid ;
+    int res =1 ; 
+    while(l<=r )
+    {
+        mid = l + (r-l)/2;
+        if(calc(arr , mid))
+            res = mid , r = mid -1;
+        else 
+            l=mid+1 ;
     }
+    printf("Case %d: %d\n", k++ , res );
 
 }
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
-    while(cin >>n && n!=0)
+
+    int t ; cin>>t ;
+    while(t--)
     {
         solve();
     }

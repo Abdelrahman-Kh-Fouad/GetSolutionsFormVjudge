@@ -23,6 +23,7 @@ typedef long long ll;
 typedef unsigned long long ull;
 bool  calc (ll count ,ll rb , ll rs , ll rc ,ll nb , ll ns ,ll nc , ll pb , ll ps ,ll pc , ll r )
 {
+
     rb = count * rb , rs = count *rs ,rc =  count *rc;
     if (rb > nb )
         r -=(rb - nb )*pb;
@@ -36,16 +37,20 @@ bool  calc (ll count ,ll rb , ll rs , ll rc ,ll nb , ll ns ,ll nc , ll pb , ll p
 void solve()
 {   
     string s ; cin>>s ; 
-    int nb , ns , nc ; 
+    ll nb , ns , nc ; 
     cin>>nb >> ns >>nc ; 
-    int pb , ps , pc ; 
+    ll pb , ps , pc ; 
     cin>>pb >> ps >> pc ; 
     ull r ; cin>>r ; 
     map<char, int>mp ; 
+    mp['B']= 0 ; 
+    mp['S']= 0 ; 
+    mp['C']= 0 ; 
+
     for(auto i : s )mp[i]++ ;
     int rb = mp['B'] ,rs = mp['S'] ,rc = mp['C'] ;
 
-    ll l = 0 , h=(ull) 1e12 ;
+    ull l = 0 , h=(ull) 1e13 ;
     ll mid ;
     ll res =-1 ;
     while(l <= h )

@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std ;
-
+//ifstream in ("../in.txt");
+//ofstream out ("../out.txt");
 int dx[] = { 1, 1, -1, -1, 2, 2, -2, -2 };
 int dy[] = { 2, -2, 2, -2, 1, -1, 1, -1 };
 
@@ -35,8 +36,7 @@ int bfs (int sr ,int sc ,int er , int ec)
 int main ()
 {
     string _1,_2;
-    while (!cin.eof()) {
-        cin >> _1 >> _2;
+    while (cin>>_1>>_2 )  {
         cout<<"To get from " <<_1 <<" to "<<_2<< " takes "<< bfs((int) (_1[0] - 'a'), (int) (_1[1] - '0') - 1, (int) (_2[0] - 'a'), (int) (_2[1] - '0') - 1) <<" knight moves."<<endl;
     }
 

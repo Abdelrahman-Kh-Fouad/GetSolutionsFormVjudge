@@ -21,27 +21,30 @@ template<class A> ostream& operator <<(ostream& out, const vector<A> &v) {
 }
 typedef long long ll;
 typedef unsigned long long ull;
-bool cmp(pair<int,int>&x , pair<int,int>&y){return(x.ss == y.ss)? x.ff < y.ff : x.ss > y.ss ;}
+bool cmp(pair<int,int>&x , pair<int,int>&y){return x.ff > y.ff ;}
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
     int n ; cin>>n ;
-    int s ; cin>>s ; 
-    map<char , map<int ,int >>mp;
-    char b ; int t ,f ;
+    int s ; cin>>   s ; 
+    map<char , map<int ,int ,greater<int>>>mp;
+    char b ; int tmp  ,f ,t = 0  ;
     for(int i =0 ;i  <n ;i++)
-        cin>> b >>t >>f ,mp[b][t]+=f;
+        cin>> b >>t >>f ,tmp,mp[b][t]+=f;
+
     
-    vector<pair<int,int>>ss(all(mp['S'])) ;
-    vector<pair<int,int>>bb(all(mp['B'])) ;
-    sort(all(ss) , cmp);
-    sort(all(bb) , cmp);
-    for(int i=0 ;i < s && i<sz(ss);i++)
-        cout<< 'S'<<" "<<ss[i].ff <<" "<<ss[i].ss<<endl; 
-    for(int i=0 ;i < s && i<sz(bb);i++)
-        cout<< 'B'<<" "<<bb[i].ff<<" "<<bb[i].ss<<endl;
-    
+    vector<pair<int,int>>x, y ; 
+   	for (auto it : mp['S'])
+		x.push_back(it);
+	for (auto it : mp['B'])
+		y.push_back(it);
+	sort(x.begin(), x.end(), greater<pair<int, int>>());
+	sort(y.begin(), y.end(), greater<pair<int, int>>());
+	for (int i = max(0, (int) x.size() - s); i < x.size(); i++)
+		cout << "S " << x[i].first << " " << x[i].second << "\n";
+	for (int i = 0; i < min((int) y.size(), s); i++)
+		cout << "B " << y[i].first << " " << y[i].second << "\n";
     
     return 0 ; 
 }

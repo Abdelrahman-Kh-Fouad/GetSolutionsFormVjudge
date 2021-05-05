@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std ;
 string s ; 
-int memo [256][256];
+int memo [1000][1000];
 int dp (int i =0  , int j=s.length()-1)
 {
     if(j-i <1)
@@ -14,7 +14,7 @@ int dp (int i =0  , int j=s.length()-1)
 }
 int main ()
 {
-    freopen("in" , "r", stdin);
+    //freopen("in" , "r", stdin);
     int t ; cin>>t; 
     getline(cin , s );
 

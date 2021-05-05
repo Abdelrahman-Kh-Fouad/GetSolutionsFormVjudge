@@ -31,7 +31,10 @@ void solve()
     pp[0] = p ; 
     for(int i =1 ;i < n ;i++)
         pp[i]=pp[i-1] * (1-p) ,all+=pp[i];
-    cout << fixed <<setprecision(4)<<pp[s-1] / all <<endl;
+    res = pp[s-1]/all;
+    if(isnan(res))
+        res =0 ;
+    cout << fixed <<setprecision(4)<<res  <<endl;
 
     
 }

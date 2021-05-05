@@ -11,6 +11,6 @@ int main() {
     double sum =0 ;
     for(int i =0 ;i < n ;i++)
         sum+=res*arr[i];
-    cout<<fixed<<setprecision(1)<<min(v,sum);
+    cout<<min(v,sum);
     return 0;
 }

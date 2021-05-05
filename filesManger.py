@@ -15,11 +15,12 @@ def GetNameOfFile(node):
             break
         result +=i
     result = result[::-1]
+
 def CheckIfCOrPy(path):
     file = open(path)
     for line in file :
         if line.find("#include") != -1:
-            return True ;
+            return True
     return False
 
 def Getext(path):

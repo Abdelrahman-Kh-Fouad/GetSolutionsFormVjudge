@@ -43,7 +43,7 @@ void solve()
                 sum++ ,ch.insert(sub);
         }
     }
-    cout<<sum<<endl;
+    cout<<"The string '"<< s<<"' contains "<<sum<<" palindromes."<<endl;;
 }
 int main()
 {

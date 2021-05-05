@@ -27,21 +27,22 @@ void solve()
 {
     vector<int>arr(n);
     for(int &i :arr)cin>>i;
-    int l = 0 , r = 0 ;
-    int ans =INT_MAX , sum = 0 ;
-    while(l<n ){
-        while(r <= n && sum + arr[r] <= s ) 
-            sum += arr[r++] ;
-        ans =min(ans , r -l +1);
+    int l = 0 , r = -1 ;
+    int ans =INT_MAX , sum = 0;
+    while(l< n){
+        while(r+1 <n && sum  < s ) 
+            sum += arr[++r] ;
+        if(sum >= s )ans =min(ans , r -l +1);       
         sum-=arr[l++];
     }
+    if(ans==INT_MAX)ans = 0 ; 
     cout<<ans<<endl;
 }
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
-    // freopen("in" ,"r" ,stdin);
+     //freopen("in" ,"r" ,stdin);
     while(cin >> n>>s ) solve();
     
     return 0 ; 

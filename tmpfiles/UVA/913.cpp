@@ -11,9 +11,9 @@ int main() {
    {
         ll level=(n+1)/2;
         ll i = level*(level+1)-level;
-        cout<<ii(i)+ii(i-1)+ii(i-2);
-       return 0;
+        cout<<ii(i)+ii(i-1)+ii(i-2)<<endl;
    }
+    return 0;
 }
 //2*(n-2)+10
  //

@@ -9,12 +9,16 @@ using namespace std;
 #define debugVec(vec) cout<<(#vec)<<": "; for (auto& i: vec) cout<<i<<" "; cout<<endl
 typedef long long ll;
 typedef unsigned long long ull;
-
-int dfs (vector<vector<int>>&adj ,  int node )
+vector<bool>used ; 
+ll dfs (vector<vector<int>>&adj , int par , int node )
 {
     int res =0 ; 
+    if(used[node])
+        return INT_MAX;
+    
+    used[node]=1 ;
     for(int i : adj[node])
-        res += dfs(adj , i);
+        if(i != par )res += dfs(adj , node,i);
     return res +1 ; 
 
 }
@@ -22,17 +26,18 @@ bool solve()
 {
     int n ; cin>>n ; 
     vector<vector<int>>adj(n+1 );
+    used.assign(n+1 , 0 );
     int m ; cin>>m ; 
     int t , f ;
     int minn = INT_MAX ; 
     for(int i  =0 ;i  <m ;i++)
     {
         cin>>t >>f ;
-        if(t > f )swap(t , f );
+        adj[f].pb(t);
         adj[t].pb(f);
         minn = min ({minn , t ,f });
     }    
-    return (dfs(adj , minn)== n );
+    return (dfs(adj , -1, minn)== n );
 
 }
 int main()

@@ -27,19 +27,14 @@ void solve()
     getline(cin ,s );
     stringstream ss(s);
 
-    vector<int>r(2 ,-1);
+    vector<double>r(2 ,-1);
     int ind =0  ;
     while (ss>>r[ind++]);
     if( r[1] ==-1)
-        cout<<"Impossible"<<endl;
-    else 
-    {
-        ll R =r[0]+r[1];
-        cout<< fixed << setprecision(4) << ((double)2*acos(0)) * ((R*R) - (r[0]*r[0]) -(r[1]*r[1]))<<endl;;
-        
-    }
-    
+        r[0] /= 4 ,r[1] =r[0] ;
 
+    double R =r[0]+r[1];
+    cout<< fixed << setprecision(4) << ((double)2*acos(0)) * ((R*R) - (r[0]*r[0]) -(r[1]*r[1]))<<endl;
 
 }
 int main()

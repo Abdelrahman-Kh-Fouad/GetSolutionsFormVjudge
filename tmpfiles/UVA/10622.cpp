@@ -22,17 +22,34 @@ int main ()
     ll n ; 
     while (cin>>n && n )
     {
-        map<ll , int >res ; 
-        for(ll i  = 0 ;i < primes.size() && primes[i]*primes[i]<=n ;i++)
+        bool neg = n < 0 ; 
+        n = abs(n);
+        set<ll >res ; 
+
+        for(ll i = 1 ; i* i <=n ;i++)
+            if(n % i ==0 && i !=1 )res.insert(i);
+        bool k = 0 ;         
+       
+
+        for(auto i = res.begin() ; i!=res.end()&& !k ; i++)
         {
-            while (n % primes[i] == 0)
+            ll num  =1 ;
+            ll cnt =0 ;  
+            while(num <n)
+                num *=*i ,cnt++; 
+            
+            if(num == n)
             {
-                res[primes[i]]++;
-                n /=primes[i];
+                if(!neg|| (neg && cnt %2))
+                {
+                    cout<<cnt<<endl;
+                    k =1 ;
+                }
             }
         }
-        if(n!=1)res[n]++;
-        cout<<res.begin()->second<<endl;
+        if(!k)
+            cout<<1 <<endl;
+
     }
     return 0 ; 
 

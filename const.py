@@ -31,7 +31,8 @@ vJudge_headers= {
 websiteUrl= "https://vjudge.net/"
 checkStateState ="https://vjudge.net/user/checkLogInStatus"
 logInUrl="https://vjudge.net/user/login"
-fileUrl ="https://vjudge.net/user/exportSource?minRunId=0&maxRunId=99999999&ac=true";
+fileUrl ="https://vjudge.net/user/exportSource?minRunId=0&maxRunId=99999999&ac=true"
+#                          "/user/exportSource?minRunId=0&amp;maxRunId=99999999&amp;ac=true"
 usersUrl = "https://vjudge.net/user/"
 root = os.popen("pwd").read()
 root =root[0:len(root)-1]

@@ -42,52 +42,25 @@ public :
     void build (int node  , int l , int r )
     {
         if(l== r )
-            sTree[node]=arr[l] %(int)(1e6 +7) ;
+            sTree[node]=(arr[l]) ? arr[l]/abs(arr[l]) :0  ;
         else 
         {
             int mid = l +r >> 1 ;
             build(left(node) , l , mid );
             build(right(node) , mid+1  , r );
-            sTree[node]= (ll)(sTree[left(node)]*(ll)sTree[right(node)]) %(int)(1e6 +7); 
+            sTree[node]= (sTree[left(node)]*(ll)sTree[right(node)]) ; 
 
         }
     }
-
     void update_point(int ind , int val )
     {
         ind +=N-1 ;
-        sTree[ind]=val%(int)(1e6 +7);
+        sTree[ind]=(val) ? val/abs(val) : 0 ;
         while(ind >1 )
         {
             ind>>=1 ;
-            sTree[ind] = ((ll)sTree[ind <<1]*(ll)sTree[(ind <<1) +1])%(int)(1e6 +7);
+            sTree[ind] = sTree[left(ind)]*sTree[right(ind)];
         }
-    }
-    void update_range(int i, int j ,int val){update_range(1 , 1 , N , i ,j , val);}
-    void update_range(int node ,int l ,int r , int i ,int j , int val)
-    {
-        if(i > r || j < l)return;
-        if(l >= i && r <=j)
-            sTree[node]+=(r -l +1)*val , lazy[node]+=val;
-        else
-        {
-            int mid = l + r >> 1 ;
-            progragate(node , l , mid , r );
-            update_range(left(node) , l ,mid , i ,j , val);
-            update_range(right(node) , mid+1  ,r , i ,j , val);
-            sTree[node]=sTree[left(node)]+sTree[right(node)];
-
-
-        } 
-    }
-    void progragate(int  node , int l , int mid ,int r )
-    {
-        lazy[left(node)]*=lazy[node];
-        lazy[right(node)]*=lazy[node];
-        sTree[left(node)]*=(mid-l+1 )*lazy[node];
-        sTree[right(node)]*=(r-mid )*lazy[node];
-        lazy[node]= 0 ;
-
     }
     int query(int i ,int j ){return query(1 , 1  ,N ,  i , j );}
     int query(int node ,int l ,int r , int i ,int j)
@@ -95,7 +68,6 @@ public :
         if( i > r || j < l )return 1;
         if(l >= i && r <= j )return sTree[node];
         int mid = l + r >>1 ; 
-        //progragate(node , l, mid , r );
         int q1 = query(left(node ) , l , mid , i ,j );
         int q2 = query(right(node ) , mid+1 ,r , i ,j );
         return q1 * q2 ; 

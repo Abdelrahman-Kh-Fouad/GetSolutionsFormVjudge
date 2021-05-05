@@ -27,15 +27,14 @@ void solve()
     ll d ; cin>>d ; 
     vector<ll>arr(n);
     for(int i =0 ;i  < n; i++)cin>>arr[i];
-    ll res = 0 ; 
+    ull res = 0 ; 
     for(int i =0 ;i <  n-1 ;i++)
     {
         int tar = arr[i]+d;
-        int ind = lower_bound(arr.begin()+i+1 ,arr.end() , tar) -arr.begin();
-        if(ind == n )ind-- ; 
+        int ind = lower_bound(arr.begin()+i ,arr.end() , tar) -arr.begin();
+        if(ind != 0 && arr[ind]  !=tar  )ind-- ; 
         if(arr[ind] > arr[i] && ind - i+1 >=3 && arr[ind] <= arr[i] + d )
-            res += ((ind -i  )*(ind - i-1 ))/2;
-        
+                    res += ((ull)(ind -i  )*(ull)(ind - i-1 ))/2;
     }
 
     cout<<res <<endl;

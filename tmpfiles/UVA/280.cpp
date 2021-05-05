@@ -37,14 +37,24 @@ void solve()
     {
         int v ; cin>> v ;
         bool used[n+1]={0};
-        for(int &i : adj[v])
-            for(int &j: adj[i])
-                used[i]=1 , used[j]=1;
+        queue<int>q ;
+        for(int &i :adj[v])q.push(i); 
+        while (!q.empty())
+        {
+            int cur= q.front();
+            q.pop();
+            used[cur] =1 ;
+            for(int &i : adj[cur])
+                if(!used[i]) q.push(i) , used[i]= 1 ;
+        }
+
+    
         vector<int>res ; 
         for(int i =1 ; i<=n ;i++)
             if(!used[i])res.pb(i);
-        cout<<sz(res)<<" ";
-        for(int &i : res)cout<<i<<" ";
+        cout<<sz(res);
+        for(int i =0 ;i < sz(res) ;i++)
+            cout<<" "<<res[i];
         cout<<endl;
     }
 

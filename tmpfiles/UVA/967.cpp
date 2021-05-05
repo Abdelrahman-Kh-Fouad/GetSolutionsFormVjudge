@@ -51,10 +51,13 @@ int main() {
     {
         cin>>r;
         int res =rsq[r]-rsq[l-1];
-        if(res)
-            cout<<res <<" "<<"Circular Prime."<<endl;
+        if(res==1)
+            cout<<"1 Circular Prime."<<endl;
+        else if (res)
+            cout<<res <<" "<<"Circular Primes."<<endl;
         else
             cout<<"No Circular Primes."<<endl;
     }
     return 0;
 }
+

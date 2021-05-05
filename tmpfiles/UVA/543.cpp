@@ -17,17 +17,18 @@ void sieve()
 int main() {
     sieve();
     int n ;
-    int maxx=0;
-    pair<int,int>res;
+
     while (cin>>n , n!=0)
     {
-        for (int i =1 ;i < ceil(n/2);i++)
+        int maxx=-1;
+        pair<int,int>res={-1,-1};
+        for (int i =1 ;i <= ceil(n/2);i++)
         {
             if(prime[i]&& prime[n-i])
                 if(maxx<abs(i-n+i))
                     maxx=abs(i-n+i) , res={i, n-i};
         }
-        if (!maxx)
+        if (res==make_pair(-1,-1))
             cout<<"Goldbach's conjecture is wrong."<<endl;
         else
             cout<<n<<" = "<<res.first<<" + "<<res.second<<endl;

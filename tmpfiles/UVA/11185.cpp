@@ -2,14 +2,18 @@
 using namespace std ;
 int main() {
     long long n ;
-    while (cin>>n, n!=-1)
+    while (cin>>n, n>=0)
     {
+        string s ="";
+        if (!n)
+            s="0";
         while(n)
         {
-            cout<<n%3;
+            s.push_back('0'+n%3);
             n/=3;
         }
-        cout<<endl;
+        reverse(s.begin(),s.end());
+        cout<<s<<endl;
     }
     return 0;
 }

@@ -17,13 +17,17 @@ int main(int argc, const char** argv) {
         else 
         {
             int sum =0 ;
-            for (int i =0 , j =0 ; i < n && j<m ;)
+            int i , j ;
+            for (i =0 , j =0 ; i < n && j<m ;)
             {
                 if(knights[j]>=dragons[i])
                     sum +=knights[j++],i++;   
                 else j++;
             }
-            cout<<sum<<endl;
+            if (sum && i==n)
+                cout<<sum<<endl;
+            else 
+                cout<<"Loowater is doomed!"<<endl;
         }
     }
     

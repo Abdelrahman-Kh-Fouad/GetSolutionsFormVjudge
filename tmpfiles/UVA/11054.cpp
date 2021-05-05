@@ -2,20 +2,18 @@
 using namespace std; 
 int main ()
 {
-    int n ;
+    long long   n ;
     while(cin>> n , n!=0)
     {
-        vector<int>arr(n);
+        long long  tmp ;
+        long long  sum =0;
+        long long  cur =0; 
         for (int i =0 ;i < n ;i++)
-            cin>>arr[i];
-        int sum =0;
-        int cur =0;
-        for (int i =0 ;i < n ;i++)
-        {   
-            cur+=arr[i];
+        {
+            cin>>tmp;
+            cur+=tmp;
             if(i!=n-1)
                 sum+=abs(cur);
-             
         }
         cout<<sum<<endl;
     }

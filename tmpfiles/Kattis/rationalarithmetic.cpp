@@ -11,18 +11,7 @@ using namespace std;
 
 typedef long long ll;
 typedef unsigned long long ull;
-pair<ll,ll> sum (ll x1 ,ll y1 ,ll x2 ,ll y2  ){
-    return {y1 * x2 + x1 * y2  , y1 * y2 };
-}
-pair<ll,ll>prod(ll x1 ,ll y1 ,ll x2 ,ll y2){
-    return {x1 *x2 , y1 *y2 };
-}
-pair<ll,ll> opt(pair<ll,ll>x )
-{
-    ll tmp = __gcd( x.ff , x.ss);
-    x.ff /=tmp , x.ss/=tmp;
-    return x ; 
-}
+
 void solve()
 {   
     ll x1 ,y1 , x2 ,y2 ; 
@@ -30,18 +19,18 @@ void solve()
     cin>>x1 >> y1 >> op >> x2 >> y2;
     pair<ll,ll>res ; 
     if(op =='*')
-        res = opt(prod(x1 ,y1 ,x2 ,y2 ));
+        res.ff = x1 *x2 , res.ss =y1*y2;
     else if (op=='+')
-        res =opt(sum(x1 , y1,x2 ,y2  ));
+        res.ff = x1 * y2 + x2 * y1 , res.ss = y1 * y2 ;
     else if(op=='/')
-        res =opt(prod(x1 , y1 ,y2 ,x2 ));
+        res.ff =x1 *y2 , res.ss = y1 * x2 ; 
     else 
-        res =opt(sum(x1 , y1 , -x2 ,y2));
-
-    ll sign ; 
-    if(res.ff < 0 && res.ss < 0 || res.ff >=0 && res.ss>= 0) sign = 1 ;
-    else sign = -1;
-    printf("%d / %d\n" , sign* abs(res.ff) , abs(res.ss));
+        res.ff = x1 * y2 -(x2 * y1) , res.ss = y1 * y2 ;
+    
+    ll g = __gcd(res.ff , res.ss);
+    res.ff /= g , res.ss /= g ;
+    if(res.ff >0 && res.ss < 0 )res.ff *= -1, res.ss *=-1;
+    cout<< res.ff  <<" / "<< res.ss <<endl;
 }
 int main()
 {

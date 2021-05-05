@@ -27,9 +27,11 @@ void solve()
     int arr[n*3];
     for(int i = 0 ;i < 3*n ;i++)cin>>arr[i];
     sort(arr ,arr+3*n );
+    reverse(arr ,arr+3*n );
+
     int sum = 0 ;
-    for(int i =1 ;i < 3*n ; i+=3)
-        sum+=arr[i];
+    for(int i =0 ;i < n ; i++)
+        sum+=arr[2*i +1 ];
     cout<<sum<<endl;
 }   
 int main()

@@ -49,7 +49,7 @@ void solve()
     }
     cout<<"Case "<<++tt <<": ";
     if(ans ==INT_MAX)
-        cout<<"sequance nai"<<endl;
+        cout<<"sequence nai"<<endl;
     else
         cout<<ans<<endl;
     

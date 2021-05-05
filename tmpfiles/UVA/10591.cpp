@@ -37,7 +37,7 @@ int main() {
         if(!f )
             cout<<"Case #"<<k<<": "<<stop<<" is a Happy number."<<endl;
         else
-            cout<<"Case #"<<k<<": "<<stop<<" is an UnHappy number."<<endl;
+            cout<<"Case #"<<k<<": "<<stop<<" is an Unhappy number."<<endl;
 
 
     }

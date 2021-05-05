@@ -25,11 +25,13 @@ int  n ;string s ;
 int memo [5001][5001];
 int dp(int i ,int j )
 {
-    if(i== j || i> j )
+    if( i > j )
         return 0 ;
     int &stat = memo[i][j];
-    if(stat !=-1)return stat ; 
-    int ch3 = dp(i+1 , j-1 ) + 2 * (int)!(s[i] ==s[j]);
+    if(stat !=-1)return stat ;
+    int ch3 = INT_MAX;  
+    if(s[i] ==s[j])
+        ch3 = dp(i+1 , j-1 );
     int ch1 = dp(i , j-1  )+1 ; 
     int ch2 = dp(i+1 , j  )+1 ;
     return stat = min ({ch1 ,ch2 ,ch3 });
@@ -40,7 +42,7 @@ void solve()
     getline(cin ,s );
     getline(cin ,s );
     memset(memo , -1 , sizeof memo);
-    cout << n  +dp(0 , n-1)<<endl;;
+    cout <<dp(0 , n-1)<<endl;;
 }
 int main()
 {

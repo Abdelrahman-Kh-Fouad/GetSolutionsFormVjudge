@@ -2,7 +2,10 @@ while True:
 	try:
 		n=input()
 		n=int(n)
-		print(int((n*(n+1))/2 +(n-2))+1)
+		if n ==0 :
+			print(1)
+		else :
+			print(int(n*n -(n-2)))
 	except:
 		break
 

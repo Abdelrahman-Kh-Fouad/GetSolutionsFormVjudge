@@ -18,9 +18,9 @@ int main ()
 {
     string a , b ; 
     int t =1 ; 
-    while(cin>>a && a !="#")
+    while(getline(cin ,a ) && a !="#")
     {
-        cin>>b ; 
+        getline(cin , b ); 
         memset(memo , -1 , sizeof memo);
         printf("Case #%d: you can visit at most %d cities.\n" , t++ , dp(a , b ));
     }

@@ -21,14 +21,6 @@ template<class A> ostream& operator <<(ostream& out, const vector<A> &v) {
 }
 typedef long long ll;
 typedef unsigned long long ull;
-
-
-
-
-
-
-
-
 class segmantree {
 private:
     int N ;
@@ -109,13 +101,11 @@ int n ;
 int k ;
 void solve()
 {
-    
+    if(k)cout<<endl;
     int N = 1 ; 
-    while (N<n)
-        N <<=1 ; 
-
+    while (N<n)N <<=1 ; 
+    cout<<"Case "<< ++k <<":"<<endl;
     
-    printf("Case %d:\n",++k);
     vector<int>arr (N+1,  0);
     for(int i =1 ;i  <=n ;i++)cin>>arr[i];
     segmantree sg(arr);
@@ -126,8 +116,9 @@ void solve()
         if(s == "S")
         sg.update_point(l, r );
         else
-         cout<<sg.query(l ,r )<<endl; 
+            cout<<  sg.query(l ,r )<<endl; 
     }
+        
 }
 int main()
 {

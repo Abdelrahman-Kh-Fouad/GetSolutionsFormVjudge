@@ -27,12 +27,12 @@ ll MOD = 1e9 + 7 ;
 class Matrix{
 public :
     int n ,m ;
-    vector<vector<int>>arr;
+    vector<vector<ll>>arr;
 public :
     Matrix(int n ,int m ): n(n), m(m){
-        arr.assign(n ,vector<int>(m, 0 ));
+        arr.assign(n ,vector<ll>(m, 0 ));
     }
-    Matrix(vector<vector<int>> &arr):n(arr.size()), m(arr.front().size()){
+    Matrix(vector<vector<ll>> &arr):n(arr.size()), m(arr.front().size()){
         this->arr = arr ; 
     }
     static Matrix I (int n ){
@@ -41,7 +41,7 @@ public :
             res.arr[i][i] =1 ; 
         return res ; 
     }
-    static Matrix vec (vector<int> &arr ){
+    static Matrix vec (vector<ll> &arr ){
         Matrix res(arr.size(),1) ;
 
         for(int i =0 ;i < res.n ;i+=1)
@@ -100,18 +100,19 @@ int main()
     cin.tie(0);
     MOD =1000000007;
     int n , m , p ; cin>>n >> m >> p ; 
-    vector<vector<int>>adj(n ,vector<int>(n,0));
+    vector<vector<ll>>adj(n ,vector<ll>(n,0));
     int f ,t ; 
     for(int i =0 ;i <m;i++)
         cin>>f >>t , adj[f-1][t-1]=1 ;
     
     Matrix a (adj);
-    Matrix res  = power(a , p , MOD);    
+    Matrix res  = power(a , p , MOD);
+
     ll sum =0 ; 
     for(int i = 0 ; i< n ;i++)
         for(int j =0 ; j  <n ;j++)
             sum +=res.arr[i][j] , sum %= MOD;
-    cout<<sum <<endl;
+    cout<<sum % MOD<<endl;
 
     return 0 ; 
 }

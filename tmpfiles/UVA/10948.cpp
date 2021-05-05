@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std ;
 #define N (int)1e6
-vector<bool >isprime(N,1);
+vector<bool >isprime(N+1,1);
 vector<int>prime;
 void sieve()
 {
@@ -21,12 +21,12 @@ int main()
 {
     sieve();
     int n ;
-    while (cin>>n , n!=0)
+    while (cin>>n ,n!=0)
     {
         int maxx=-1;
         pair<int,int>res ;
-        auto it =lower_bound(prime.begin() , prime.end() ,n);
-        for (auto i=++prime.begin() ; i !=it ; i++)
+        auto  it =lower_bound(prime.begin() , prime.end() ,n);
+        for (auto i =++prime.begin() ; i!=it;i++)
         {
             if (n-(*i)>=0&& isprime[n-(*i)] && abs(n-2*(*i)>maxx ))
                 maxx=abs(n-2*(*i)) , res={*i , n-(*i)};
@@ -37,5 +37,6 @@ int main()
         else
             printf("%d+%d\n",res.first,res.second);
     }
+
     return 0;
 }

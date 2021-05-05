@@ -40,21 +40,19 @@ void solve()
         cin>>arr[i];
     memset(memo , -1 , sizeof memo );
     vector<int>res(n) ,out;
-    for(int i = n ; i >=0 ; i-- )
+    for(int i = n-1 ; i >=0 ; i-- )
         res[i]=dp(arr , i-1 ,i );
+
     int pos = max_element(all(res)) -res.begin();
     int tosearch = res[pos];
-    pos = n ;
+    pos = n-1 ;
     cout<< tosearch <<" ";
     while(tosearch > 0 )
     {
-        int minn = INT_MAX;
-        int ind = -1 ;
-        for(int i =0 ;i < pos ;i++ )
+        int minn = INT_MAX , ind = -1 ;
+        for(int i =0 ;i <=pos ;i++ )
         if(res[i] == tosearch && arr[i] < minn )    
             minn =arr[i] ,ind = i ;
-        if(ind == -1 )
-            break;
         out.pb(arr[ind]);
         tosearch--;
         pos = ind ;

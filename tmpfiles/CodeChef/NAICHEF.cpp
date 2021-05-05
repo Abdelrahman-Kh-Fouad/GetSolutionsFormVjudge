@@ -25,19 +25,22 @@ void solve()
 {
     int n ,a ,b ; cin>> n >>a >> b ;
     vector<int>arr(n);
+    unordered_map <int ,int >ch;
     for(int i =0 ;i < n ;i++)
-        cin>>arr[i];
+        cin>>arr[i] ,ch[arr[i]]++;
 
     double res =0;
     double hit = 0 ;
-    for(int i =0 ;i  <n ;i++ )
-    {
-        for(int j =0 ;j <n ;j++)
-        {
-            if(arr[i] == a && arr[j] == b)hit +=1.0 ;
-            res+=1.0 ; 
-        }
-    }
+    // for(int i =0 ;i  <n ;i++ )
+    // {
+    //     for(int j =0 ;j <n ;j++)
+    //     {
+    //         if(arr[i] == a && arr[j] == b)hit +=1.0 ;
+    //         res+=1.0 ; 
+    //     }
+    // }
+    hit = ch[a]* ch[b];
+    res= n*n; 
     res = hit /res ;
     printf("%0.6f\n" , res);
 
