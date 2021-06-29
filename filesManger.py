@@ -1,5 +1,8 @@
 import os
 import const
+import time
+class Problem :
+    pass
 
 def OnlyFiles(node):
     res = True
