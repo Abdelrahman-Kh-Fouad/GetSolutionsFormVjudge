@@ -1,6 +1,7 @@
 import os
 import const
 import time
+
 class Problem :
     pass
 
@@ -67,7 +68,11 @@ def TraverseDirs(node):
 
     curPath = node
     for judge in judgelist:
-        curPath+='/'+judge
+
+        curPath += '/'+judge
+        if os.path.isfile(curPath):
+            curPath = DelDir(curPath)
+            continue
         problems = os.listdir(curPath)
         for problem in problems:
             curPath+='/'+problem
@@ -94,6 +99,3 @@ def NamingAndReplace(root):
     TraverseDirs(root)
     print(os.popen('tree '+root).read())
 
-
-if __name__ == '__main__':
-    NamingAndReplace(const.unzipDirTemp)
